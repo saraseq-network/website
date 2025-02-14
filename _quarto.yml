@@ -1,0 +1,54 @@
+project:
+  type: website
+  preview: 
+    navigate: false
+
+website:
+  site-url: https://saraseq-network.com
+  favicon: image/network.png
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+
+    left:
+     - text: Main 
+       href: index.qmd
+       icon: house
+    
+    right:
+      - href: about.qmd
+        text: About me
+      - href: research.qmd
+        text: My Research
+      
+    tools:
+      - text: Contact
+        icon: link-45deg
+        menu:
+         - text: LinkedIn
+           url:  https://www.linkedin.com/in/saraseq/
+           icon: linkedin
+         - text: Email
+           url:  sequeira.23@osu.edu
+           icon: envelope-plus-fill
+         - text: GitHub
+           url: https://github.com/saraseq-network
+           icon: github
+
+  page-footer:  
+    left: >-
+     &#169; 2023 Sara C. Sequeira &#8729;   
+         
+format:
+  html:
+    highlight-style: atom-one
+    theme: cosmo
+    css: styles.css
+    toc: true
+    number-sections: true
+    number-depth: 3
+    grid:
+      body-width: 850px
+
+
+

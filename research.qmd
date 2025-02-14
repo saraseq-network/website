@@ -1,0 +1,64 @@
+---
+title: "My Research"
+subtitle: "Interested in my ongoing and past research projects? Have a look!"
+format: html
+---
+
+# Research and Education Locations
+
+Below is a map highlighting the locations where I conducted my research and education:
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(dplyr)
+library(plotly)
+locations <- data.frame(
+  city = c("Lisbon, Portugal", "Hong Kong, SAR China", "Columbus, OH, USA"),
+  lon = c(-9.139, 114.169, -82.999),  # Longitude
+  lat = c(38.722, 22.319, 39.961)     # Latitude
+)
+
+geo <- list(
+  showland = TRUE,
+  showlakes = TRUE,
+  showcountries = TRUE,
+  showocean = TRUE,
+  countrywidth = 0.5,
+  landcolor = "lightgrey",
+  lakecolor = "white",
+  oceancolor = "white",
+  projection = list(
+    type = 'orthographic',
+    rotation = list(lon = -30, lat = 20, roll = 0)  # Adjust rotation for visibility
+  ),
+  lonaxis = list(showgrid = TRUE, gridcolor = "gray40", gridwidth = 0.5),
+  lataxis = list(showgrid = TRUE, gridcolor = "gray40", gridwidth = 0.5)
+)
+
+plot_geo() %>%
+  add_trace(
+    type = "scattergeo",
+    mode = "markers+text",
+    lon = ~locations$lon,
+    lat = ~locations$lat,
+    text = ~locations$city,
+    textposition = "top center",
+    marker = list(size = 8, color = "darkred", symbol = "circle")
+  ) %>%
+  layout(
+    geo = geo
+  )
+```
+
+
+
+
+
+
+
+
+
+
+
+

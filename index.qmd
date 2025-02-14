@@ -1,0 +1,22 @@
+---
+title: "Sara C. Sequeira"
+subtitle: "“Power comes not from knowledge kept but from knowledge shared.”"
+image: image/network.png
+about:
+  template: jolla
+  image-width: 29em
+  id: hero-heading
+  links:
+    - icon: linkedin
+      aria-label: "LinkedIn"
+      href: https://www.linkedin.com/in/saraseq/
+    - icon: fingerprint
+      href: https://orcid.org/0000-0002-6354-8685
+    - icon: github
+      aria-label: GitHub
+      href: https://github.com/saraseq-network
+
+
+page-layout: article
+
+---
