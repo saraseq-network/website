@@ -4,21 +4,14 @@
     "href": "about.html",
     "title": "About me",
     "section": "",
-    "text": "Sara graduated from Faculdade de Medicina Veterinária at the University of Lisbon, Portugal in 2021 with a Degree in Veterinary Medicine. While completing her studies, she went on to take a position as a research assistant at the Center for Applied One Health Research and Policy Advice (OHRP) at City University of Hong Kong, SAR China. At this position, she undertook different projects, and particularly focused on analysis of poultry trade networks of Gujarat, India. Currently, she is pursuing a Doctorate in Comparative Biomedical Sciences at The Ohio State University, where her main focus is on epidemiology and understanding calf production and distribution networks in the United States. Sara’s research interests include epidemiology of infectious diseases, applied One-Health research, and particularly spatial epidemiology and network analysis.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "text": "I’m Sara — a veterinarian by training, an epidemiologist by passion, and an explorer at heart.\nBorn in Portugal but with a spirit that never settled, I’ve always been drawn to the connections between science, animals, and the world around us. What began as a love for veterinary medicine quickly grew into a broader goal: understanding how populations move, how diseases spread, and how everything connects in an increasingly globalized world.\nSince discovering epidemiology, I’ve been chasing questions that move populations — particularly animals but not only. In an era where disease travels faster than ever, population medicine and spatial epidemiology are not just fields of study; they are ongoing challenges across borders, species, and ecosystems.\nConnecting the dots — between species, spaces, and people — is at the core of what I do."
   },
   {
     "objectID": "research.html",
     "href": "research.html",
     "title": "My Research",
     "section": "",
-    "text": "1 Research and Education Locations\nBelow is a map highlighting the locations where I conducted my research and education:\n\n\n\n\n\n\nBla!\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "research.html#previous-work-and-ongoing-research-map",
-    "href": "research.html#previous-work-and-ongoing-research-map",
-    "title": "My Research",
-    "section": "",
-    "text": "Below is an interactive map showcasing the locations where I have worked."
+    "text": "One of the greatest things about my job is how international and interdisciplinary it can be.\nDuring my career journey, I was fortunate to work with amazing teams across the globe,\nand with very different livestock production systems."
   },
   {
     "objectID": "index.html",
@@ -28,10 +21,31 @@
     "text": "Back to top"
   },
   {
-    "objectID": "research.html#research-and-education-locations",
-    "href": "research.html#research-and-education-locations",
+    "objectID": "about.html#quick-facts",
+    "href": "about.html#quick-facts",
+    "title": "About me",
+    "section": "1 Quick Facts",
+    "text": "1 Quick Facts\n\nPhD Candidate in Veterinary Epidemiology\nFocused on spatial epidemiology, movement networks, and disease transmission\nPassionate about science communication, travel, and global health"
+  },
+  {
+    "objectID": "about.html#hobbies",
+    "href": "about.html#hobbies",
+    "title": "About me",
+    "section": "2 Hobbies",
+    "text": "2 Hobbies\nBesides my working ambition, I love putting my time into learning other-than-epi things - including but not limited to photography, coffee art, running, hiking, traveling and new cultures"
+  },
+  {
+    "objectID": "research.html#projects",
+    "href": "research.html#projects",
     "title": "My Research",
-    "section": "",
-    "text": "Below is a map highlighting the locations where I conducted my research and education:\n#| echo: false library(leaflet)"
+    "section": "1.1 Projects",
+    "text": "1.1 Projects\nBelow are snapshots of ongoing and past projects.\nClick any card to read more."
+  },
+  {
+    "objectID": "about.html#beyond-the-lab",
+    "href": "about.html#beyond-the-lab",
+    "title": "About me",
+    "section": "2 Beyond the lab",
+    "text": "2 Beyond the lab\nIf I’m not debugging a model, I’m probably behind a camera, petting a dog, hunting good coffee, or outside running/hiking. I love cities with ocean light and neighborhoods with great markets."
   }
 ]

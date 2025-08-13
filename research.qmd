@@ -1,13 +1,21 @@
 ---
 title: "My Research"
 subtitle: "Interested in my ongoing and past research projects? Have a look!"
-format: html
+format:
+  html:
+    css: styles/research.css
 ---
+<div class="research-intro">
+<p>
+One of the greatest things about my job is how international and interdisciplinary it can be.  
+During my career journey, I was fortunate to work with amazing teams across the globe,  
+and with very different livestock production systems.
+</p>
+  <hr>
+</div>
 
-# Research and Education Locations
 
-Below is a map highlighting the locations where I conducted my research and education:
-
+# Global research footprint
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 
@@ -52,12 +60,9 @@ plot_geo() %>%
 ```
 
 
-Bla!
-
-
-
-
-
+## Projects
+Below are snapshots of ongoing and past projects.  
+Click any card to read more.
 
 
 

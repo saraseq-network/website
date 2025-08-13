@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://saraseq-network.quarto.pub/personal_website/about.html</loc>
+    <loc>saraseq-network.com/about.html</loc>
     <lastmod>2024-08-27T01:30:44.590Z</lastmod>
   </url>
   <url>
-    <loc>https://saraseq-network.quarto.pub/personal_website/research.html</loc>
-    <lastmod>2025-02-10T00:33:18.329Z</lastmod>
-  </url>
-  <url>
-    <loc>https://saraseq-network.quarto.pub/personal_website/index.html</loc>
-    <lastmod>2024-08-27T03:21:28.854Z</lastmod>
-  </url>
-  <url>
-    <loc>https://saraseq-network.com/research.html</loc>
+    <loc>saraseq-network.com/research.html</loc>
     <lastmod>2025-02-14T01:29:34.667Z</lastmod>
   </url>
   <url>
+    <loc>saraseq-network.com/index.html</loc>
+    <lastmod>2024-08-27T03:21:28.854Z</lastmod>
+  </url>
+  <url>
+    <loc>https://saraseq-network.com/index.html</loc>
+    <lastmod>2025-05-02T02:31:45.182Z</lastmod>
+  </url>
+  <url>
     <loc>https://saraseq-network.com/about.html</loc>
-    <lastmod>2024-08-27T01:30:44.590Z</lastmod>
+    <lastmod>2025-08-13T22:32:25.229Z</lastmod>
+  </url>
+  <url>
+    <loc>https://saraseq-network.com/research.html</loc>
+    <lastmod>2025-08-13T23:08:24.811Z</lastmod>
   </url>
 </urlset>

@@ -3,9 +3,23 @@ title: "About me"
 title-block-banner: true
 ---
 
-Sara graduated from Faculdade de Medicina Veterinária at the University of Lisbon, Portugal in 2021 with a Degree in Veterinary Medicine. While completing her studies, she went on to take a position as a research assistant at the Center for Applied One Health Research and Policy Advice (OHRP) at City University of Hong Kong, SAR China. At this position, she undertook different projects, and particularly focused on analysis of poultry trade networks of Gujarat, India. Currently, she is pursuing a Doctorate in Comparative Biomedical Sciences at The Ohio State University, where her main focus is on epidemiology and understanding calf production and distribution networks in the United States. Sara’s research interests include epidemiology of infectious diseases, applied One-Health research, and particularly spatial epidemiology and network analysis.
+I’m **Sara** — a veterinarian by training, an epidemiologist by passion, and an explorer at heart.
 
+Born in Portugal but with a spirit that never settled, I’ve always been drawn to the connections between science, animals, and the world around us. What began as a love for veterinary medicine quickly grew into a broader goal: understanding how populations move, how diseases spread, and how everything connects in an increasingly globalized world.
 
-```{r}
-1 + 1
-```
+Since discovering epidemiology, I’ve been chasing questions that move populations — particularly animals but not only. In an era where disease travels faster than ever, population medicine and spatial epidemiology are not just fields of study; they are ongoing challenges across borders, species, and ecosystems.
+
+**Connecting the dots** — between species, spaces, and people — is at the core of what I do.
+
+---
+
+## Quick Facts
+- PhD Candidate in Veterinary Epidemiology
+- Focused on spatial epidemiology, movement networks, and disease transmission
+- Passionate about science communication, travel, and global health
+
+---
+
+## Beyond the lab
+If I’m not debugging a model, I’m probably behind a camera, petting a dog, hunting good coffee, or outside running/hiking. I love cities with ocean light and neighborhoods with great markets.
+

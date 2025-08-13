@@ -1,7 +1,4 @@
 - source: project
   quarto-pub:
     - id: 22b86fcd-5cce-4937-ad71-79035530b93b
-      url: saraseq-network.com
-      
-      
-    
+      url: https://saraseq-network.quarto.pub/website

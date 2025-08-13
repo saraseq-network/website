@@ -4,7 +4,7 @@ subtitle: "“Power comes not from knowledge kept but from knowledge shared.”"
 image: image/network.png
 about:
   template: jolla
-  image-width: 29em
+  image-width: 32em
   id: hero-heading
   links:
     - icon: linkedin

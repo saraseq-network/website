@@ -11,9 +11,8 @@ website:
   navbar:
 
     left:
-     - text: Main 
-       href: index.qmd
-       icon: house
+      - icon: house
+        href: index.qmd
     
     right:
       - href: about.qmd
@@ -28,12 +27,12 @@ website:
          - text: LinkedIn
            url:  https://www.linkedin.com/in/saraseq/
            icon: linkedin
-         - text: Email
-           url:  sequeira.23@osu.edu
-           icon: envelope-plus-fill
          - text: GitHub
            url: https://github.com/saraseq-network
            icon: github
+         - text: Email
+           url: mailto:sequeira.23@osu.edu
+           icon: envelope-plus-fill
 
   page-footer:  
     left: >-
