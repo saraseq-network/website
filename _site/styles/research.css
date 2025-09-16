@@ -21,30 +21,86 @@
   margin: 1.5rem auto 0;
 }
 
-/* Project two-column layout */
-.project-block {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 3rem 0;
-  align-items: center;
+
+
+
+
+/* --- Project rows (Quarto .columns) --- */
+.columns.project-row {
+  align-items: center;        /* vertically center image + text */
+  column-gap: 2rem;           /* space between columns */
+  row-gap: 1.25rem;
+  margin: 2.25rem 0;
 }
-.project-image {
-  flex: 1 1 40%;
-}
-.project-image img {
+
+/* remove top margin on first element in the text column */
+.columns.project-row .column > :first-child { margin-top: 0; }
+
+/* light padding so img/text never touch */
+.columns.project-row .column:nth-child(1) { padding-right: .75rem; }
+.columns.project-row .column:nth-child(2) { padding-left:  .75rem; }
+
+/* --- Image sizing options --- */
+/* Option A: uniform height, no cropping (letterboxed if aspect differs) */
+.project-img.contain {
   width: 100%;
+  height: 240px;              /* tweak to taste */
+  object-fit: contain;        /* no cropping */
+  background: #f6f6f7;        /* subtle backdrop for letterbox areas */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,.08);
 }
-.project-text {
-  flex: 1 1 55%;
+
+/* Option B: same aspect for all, cropped to fill (use only if you want it) */
+/*
+.project-img.cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
 }
-.project-text h2 {
-  margin-top: 0;
+*/
+
+@media (max-width: 768px){
+  .columns.project-row .column { padding: 0; }
 }
-@media (max-width: 768px) {
-  .project-block {
-    flex-direction: column;
-  }
+
+
+/* Right-side TOC size to match About page */
+#TOC { font-size: .95rem; }
+
+/* Publications block: smaller, tighter */
+.pubs { 
+  font-size: .93rem; 
+  line-height: 1.4; 
+}
+.pubs li { margin-bottom: .25rem; }
+
+/* Make the "Publications" heading compact */
+h3.pubs-title { 
+  font-size: 1rem; 
+  margin-top: .5rem; 
+  margin-bottom: .35rem; 
+  font-weight: 600;
+}
+
+
+
+
+
+/* Make project rows breathe a bit on mobile */
+@media (max-width: 720px){
+  .columns.project-row { margin: 1.5rem 0; }
+}
+
+/* Optional: subtle divider between rows */
+.columns.project-row + .columns.project-row {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+/* Keep figures neat */
+.research-intro img, .columns.project-row img {
+  image-rendering: auto;
 }

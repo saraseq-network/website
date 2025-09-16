@@ -1,0 +1,15 @@
+---
+title: "Outreach"
+subtitle: "Talks, workshops, outreach & media"
+page-layout: full
+listing:
+  contents: outreach/news
+  type: grid
+  sort: "date desc"
+  sort-ui: true
+  fields: [image, title, date, categories, description]
+  filter-ui: [search, categories]
+  categories: true
+  page-size: 12
+  max-items: 24
+---

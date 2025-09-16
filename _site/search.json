@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "outreach/news/2025-09-20-network-seminar.html",
+    "href": "outreach/news/2025-09-20-network-seminar.html",
+    "title": "SNA_Learn: Networks in Animal Health",
+    "section": "",
+    "text": "Animal movement connects premises (farms, markets, dealers, raisers, slaughter plants). These connections form contact networks that shape pathogen spread, traceability and targeting of interventions (e.g., targeted surveillance, biosecurity implementation and control measures). In this course, we’ll use R to:\n\nBuild and visualize networks of animal movements.\nCompute core metrics (in/out-degree, strength, betweenness, components).\nVisualize networks and annotate nodes by type (state, breed, sex, etc).\n“Slice” networks over time to see how structure changes.\n\n\nCore idea: Each shipment is typically a directed edge from origin → destination, with weight = number of animals moved (or shipments). Node attributes capture premises type (e.g., Dairy, Dealer, Market) and region (i.e., state, zip code). Edge attributes could be animal details (e.g., breeds, age, sex moved).\n\n\n\nTo start, let’s import a typical hypothetical dataset of cattle movements in the US and have a look at the variables.\n\nlibrary(tidyverse)\n\nmovements &lt;- readr::read_csv(\"data/SampleDataset_3m.csv\", show_col_types = FALSE)\n\nglimpse(movements)\n\n\n\n\n\n\n\n\n\nVariable\nDescription\nExample\n\n\n\n\ndate\nDate of shipment (YYYY-MM-DD)\n2025-03-15\n\n\norigin_id\nUnique code for the origin premises\nP01\n\n\norigin_type\nType of origin premises (e.g., Dairy, Dealer, Market)\nDairy\n\n\ndestination_id\nUnique code for the destination premises\nP10\n\n\ndestination_type\nType of destination premises\nFeedlot\n\n\nhead\nNumber of animals moved in this shipment\n25\n\n\ncategory\nAge/production stage of animals (Calf, Feeder, Adult)\nCalf\n\n\nsex\nSex of animals (M, F, Mixed)\nM\n\n\nbreed\nBreed category (Holstein, Angus, etc.)\nHolstein\n\n\npurpose\nReason for movement (Sale, Raising, Finishing, Slaughter)\nRaising\n\n\n\n\n\n\nNodes are the entities in our network. In this case, each unique premises (farm, dealer, market, etc.), but it could also be a region. We can list all the unique origins and destinations to define the set of nodes.\n{r}\n#| warning: false\n#| echo: true\n#| code-fold: false\n#| output: true\n\nnodes &lt;- unique(c(movements$origin_id, movements$destination_id))\nlength(nodes)   # how many unique premises?\nhead(nodes, 10) # preview some IDs"
+  },
+  {
+    "objectID": "outreach/news/2025-09-20-network-seminar.html#introduction-and-example-network",
+    "href": "outreach/news/2025-09-20-network-seminar.html#introduction-and-example-network",
+    "title": "SNA_Learn: Networks in Animal Health",
+    "section": "",
+    "text": "Animal movement connects premises (farms, markets, dealers, raisers, slaughter plants). These connections form contact networks that shape pathogen spread, traceability and targeting of interventions (e.g., targeted surveillance, biosecurity implementation and control measures). In this course, we’ll use R to:\n\nBuild and visualize networks of animal movements.\nCompute core metrics (in/out-degree, strength, betweenness, components).\nVisualize networks and annotate nodes by type (state, breed, sex, etc).\n“Slice” networks over time to see how structure changes.\n\n\nCore idea: Each shipment is typically a directed edge from origin → destination, with weight = number of animals moved (or shipments). Node attributes capture premises type (e.g., Dairy, Dealer, Market) and region (i.e., state, zip code). Edge attributes could be animal details (e.g., breeds, age, sex moved).\n\n\n\nTo start, let’s import a typical hypothetical dataset of cattle movements in the US and have a look at the variables.\n\nlibrary(tidyverse)\n\nmovements &lt;- readr::read_csv(\"data/SampleDataset_3m.csv\", show_col_types = FALSE)\n\nglimpse(movements)\n\n\n\n\n\n\n\n\n\nVariable\nDescription\nExample\n\n\n\n\ndate\nDate of shipment (YYYY-MM-DD)\n2025-03-15\n\n\norigin_id\nUnique code for the origin premises\nP01\n\n\norigin_type\nType of origin premises (e.g., Dairy, Dealer, Market)\nDairy\n\n\ndestination_id\nUnique code for the destination premises\nP10\n\n\ndestination_type\nType of destination premises\nFeedlot\n\n\nhead\nNumber of animals moved in this shipment\n25\n\n\ncategory\nAge/production stage of animals (Calf, Feeder, Adult)\nCalf\n\n\nsex\nSex of animals (M, F, Mixed)\nM\n\n\nbreed\nBreed category (Holstein, Angus, etc.)\nHolstein\n\n\npurpose\nReason for movement (Sale, Raising, Finishing, Slaughter)\nRaising\n\n\n\n\n\n\nNodes are the entities in our network. In this case, each unique premises (farm, dealer, market, etc.), but it could also be a region. We can list all the unique origins and destinations to define the set of nodes.\n{r}\n#| warning: false\n#| echo: true\n#| code-fold: false\n#| output: true\n\nnodes &lt;- unique(c(movements$origin_id, movements$destination_id))\nlength(nodes)   # how many unique premises?\nhead(nodes, 10) # preview some IDs"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About me",
@@ -7,11 +21,67 @@
     "text": "I’m Sara — a veterinarian by training, an epidemiologist by passion, and an explorer at heart.\nBorn in Portugal but with a spirit that never settled, I’ve always been drawn to the connections between science, animals, and the world around us. What began as a love for veterinary medicine quickly grew into a broader goal: understanding how populations move, how diseases spread, and how everything connects in an increasingly globalized world.\nSince discovering epidemiology, I’ve been chasing questions that move populations — particularly animals but not only. In an era where disease travels faster than ever, population medicine and spatial epidemiology are not just fields of study; they are ongoing challenges across borders, species, and ecosystems.\nConnecting the dots — between species, spaces, and people — is at the core of what I do."
   },
   {
+    "objectID": "about.html#quick-facts",
+    "href": "about.html#quick-facts",
+    "title": "About me",
+    "section": "Quick Facts",
+    "text": "Quick Facts\n\nPhD Candidate in Veterinary Epidemiology\nFocused on spatial epidemiology, movement networks, and disease transmission\nPassionate about science communication, travel, and global health"
+  },
+  {
+    "objectID": "about.html#beyond-the-lab",
+    "href": "about.html#beyond-the-lab",
+    "title": "About me",
+    "section": "Beyond the lab",
+    "text": "Beyond the lab\nIf I’m not debugging a model, I’m probably behind a camera, petting a dog, hunting good coffee, or outside running/hiking. I love cities with ocean light and neighborhoods with great markets."
+  },
+  {
+    "objectID": "about.html#curriculum-vitae",
+    "href": "about.html#curriculum-vitae",
+    "title": "About me",
+    "section": "Curriculum Vitae",
+    "text": "Curriculum Vitae"
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "My Research",
     "section": "",
-    "text": "One of the greatest things about my job is how international and interdisciplinary it can be.\nDuring my career journey, I was fortunate to work with amazing teams across the globe,\nand with very different livestock production systems."
+    "text": "One of the greatest things about my job is how international and interdisciplinary it can be. During my career journey, I was fortunate to work with amazing teams across the globe, and with different livestock production systems."
+  },
+  {
+    "objectID": "research.html#calf-movement-networks-salmonella-dublin-us",
+    "href": "research.html#calf-movement-networks-salmonella-dublin-us",
+    "title": "My Research",
+    "section": "Calf movement networks & Salmonella Dublin (US)",
+    "text": "Calf movement networks & Salmonella Dublin (US)"
+  },
+  {
+    "objectID": "research.html#vehicle-movement-networks-biosecurity-brazil",
+    "href": "research.html#vehicle-movement-networks-biosecurity-brazil",
+    "title": "My Research",
+    "section": "Vehicle movement networks & biosecurity (Brazil)",
+    "text": "Vehicle movement networks & biosecurity (Brazil)"
+  },
+  {
+    "objectID": "research.html#livestock-markets-biosecurity-us",
+    "href": "research.html#livestock-markets-biosecurity-us",
+    "title": "My Research",
+    "section": "Livestock markets & Biosecurity (US)",
+    "text": "Livestock markets & Biosecurity (US)"
+  },
+  {
+    "objectID": "research.html#livestock-traceability-icvi-exceptions-us",
+    "href": "research.html#livestock-traceability-icvi-exceptions-us",
+    "title": "My Research",
+    "section": "Livestock Traceability & ICVI Exceptions (US)",
+    "text": "Livestock Traceability & ICVI Exceptions (US)"
+  },
+  {
+    "objectID": "research.html#risk-based-framework-for-live-bird-shops-india",
+    "href": "research.html#risk-based-framework-for-live-bird-shops-india",
+    "title": "My Research",
+    "section": "Risk-based framework for Live Bird Shops (India)",
+    "text": "Risk-based framework for Live Bird Shops (India)"
   },
   {
     "objectID": "index.html",
@@ -21,31 +91,10 @@
     "text": "Back to top"
   },
   {
-    "objectID": "about.html#quick-facts",
-    "href": "about.html#quick-facts",
-    "title": "About me",
-    "section": "1 Quick Facts",
-    "text": "1 Quick Facts\n\nPhD Candidate in Veterinary Epidemiology\nFocused on spatial epidemiology, movement networks, and disease transmission\nPassionate about science communication, travel, and global health"
-  },
-  {
-    "objectID": "about.html#hobbies",
-    "href": "about.html#hobbies",
-    "title": "About me",
-    "section": "2 Hobbies",
-    "text": "2 Hobbies\nBesides my working ambition, I love putting my time into learning other-than-epi things - including but not limited to photography, coffee art, running, hiking, traveling and new cultures"
-  },
-  {
-    "objectID": "research.html#projects",
-    "href": "research.html#projects",
-    "title": "My Research",
-    "section": "1.1 Projects",
-    "text": "1.1 Projects\nBelow are snapshots of ongoing and past projects.\nClick any card to read more."
-  },
-  {
-    "objectID": "about.html#beyond-the-lab",
-    "href": "about.html#beyond-the-lab",
-    "title": "About me",
-    "section": "2 Beyond the lab",
-    "text": "2 Beyond the lab\nIf I’m not debugging a model, I’m probably behind a camera, petting a dog, hunting good coffee, or outside running/hiking. I love cities with ocean light and neighborhoods with great markets."
+    "objectID": "outreach.html",
+    "href": "outreach.html",
+    "title": "Outreach",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSNA_Learn: Networks in Animal Health\n\n\n\nTeaching\n\n\n\nHands-on intro to animal movement network analysis in R.\n\n\n\nSep 20, 2025\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   }
 ]

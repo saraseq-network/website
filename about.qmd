@@ -1,6 +1,7 @@
 ---
 title: "About me"
 title-block-banner: true
+number-sections: false
 ---
 
 I’m **Sara** — a veterinarian by training, an epidemiologist by passion, and an explorer at heart.
@@ -11,15 +12,18 @@ Since discovering epidemiology, I’ve been chasing questions that move populati
 
 **Connecting the dots** — between species, spaces, and people — is at the core of what I do.
 
----
-
 ## Quick Facts
-- PhD Candidate in Veterinary Epidemiology
-- Focused on spatial epidemiology, movement networks, and disease transmission
-- Passionate about science communication, travel, and global health
 
----
+-   PhD Candidate in Veterinary Epidemiology
+-   Focused on spatial epidemiology, movement networks, and disease transmission
+-   Passionate about science communication, travel, and global health
 
 ## Beyond the lab
+
 If I’m not debugging a model, I’m probably behind a camera, petting a dog, hunting good coffee, or outside running/hiking. I love cities with ocean light and neighborhoods with great markets.
 
+## Curriculum Vitae
+
+<iframe src="files/SequeiraS_CV.pdf" width="100%" height="800px" style="border: none;">
+
+</iframe>

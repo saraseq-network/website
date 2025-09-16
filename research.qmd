@@ -1,19 +1,21 @@
 ---
 title: "My Research"
 subtitle: "Interested in my ongoing and past research projects? Have a look!"
+page-layout: article
+number-sections: false
+title-block-banner: true
 format:
   html:
+    toc: true
+    toc-location: right
+    toc-title: "On this page"
+    toc-depth: 2
     css: styles/research.css
 ---
-<div class="research-intro">
-<p>
-One of the greatest things about my job is how international and interdisciplinary it can be.  
-During my career journey, I was fortunate to work with amazing teams across the globe,  
-and with very different livestock production systems.
-</p>
-  <hr>
-</div>
 
+::: research-intro
+One of the greatest things about my job is how international and interdisciplinary it can be. During my career journey, I was fortunate to work with amazing teams across the globe, and with different livestock production systems.
+:::
 
 # Global research footprint
 
@@ -22,9 +24,17 @@ and with very different livestock production systems.
 library(dplyr)
 library(plotly)
 locations <- data.frame(
-  city = c("Lisbon, Portugal", "Hong Kong, SAR China", "Columbus, OH, USA"),
-  lon = c(-9.139, 114.169, -82.999),  # Longitude
-  lat = c(38.722, 22.319, 39.961)     # Latitude
+  city = c("Lisbon, Portugal", "Hong Kong, SAR China", "Columbus, OH, USA", "São Paulo, Brazil", "Gujarat, India"),
+  lon = c(-9.139, # Lisbon
+          114.169, # Hong Kong
+          -82.999, # Columbus
+          -46.633, # São Paulo
+          72.571), # Gujarat
+  lat = c(38.722, # Lisbon
+          22.319, # Hong Kong
+          39.961, # Columbus
+          -23.550, # São Paulo
+          23.022) # Gujarat
 )
 
 geo <- list(
@@ -59,11 +69,106 @@ plot_geo() %>%
   )
 ```
 
+# Current projects {#current-projects}
 
-## Projects
-Below are snapshots of ongoing and past projects.  
-Click any card to read more.
+:::: {.columns .project-row}
+::: {.column width="100%"}
+## Calf movement networks & *Salmonella* Dublin (US)
+:::
+::::
 
+::::: {.columns .project-row}
+::: {.column width="40%"}
+![](image/projects/calves.jpg){.project-img .contain fig-align="left" width="100%"}
+:::
 
+::: {.column width="60%"}
+As part of my PhD, I am using cattle movement records to characterize **US calf movement networks** and **build a mathematical simulation model of *S.* Dublin spread in the US**; Using both within- and between-zip code dynamics, this tool will help us define targeted biosecurity measures and structure-aware movement interventions.
+:::
+:::::
 
+### Peer-reviewed publications {.pubs-title}
 
+-   Sequeira SC *et al.* “Navigating complexity: Salmonella Dublin risk factors in a Midwestern US calf movement system” *JDS*. DOI: [10.3168/jds.2025-27055](https://doi.org/10.3168/jds.2025-27055)
+-   Sequeira SC *et al.* (2025). "Combining different sources of movement data to strengthen traceability and disease surveillance." *Preventive Veterinary Medicine*. DOI: [10.1016/j.prevetmed.2025.106442](https://www.sciencedirect.com/science/article/pii/S0167587725000273)
+-   Sequeira SC *et al.* (2025). "A systematic scoping review and thematic analysis: How can livestock and poultry movement networks inform disease surveillance and control at the global scale?" *PLOS ONE*. DOI: [10.1371/journal.pone.0328518](https://doi.org/10.1371/journal.pone.0328518)
+
+:::: {.columns .project-row}
+::: {.column width="100%"}
+## Vehicle movement networks & biosecurity (Brazil)
+:::
+::::
+
+::::: {.columns .project-row}
+::: {.column width="40%"}
+![](image/projects/swine_trucks.jpeg){.project-img .contain width="618"}
+:::
+
+::: {.column width="60%"}
+We’re building a **vehicle–facility contact network** from GPS entries across swine operations in a brazilian production system. By implementing a monitoring system for vehicles/people movements across agricultural sites, we can **identify "super-spreader" farms** and allow a more targeted monitoring. Our team will also **track compliance by visits and flag high-risk movements**. Are these originated from high-centrality facilities?
+:::
+:::::
+
+:::: {.columns .project-row}
+::: {.column width="100%"}
+## Livestock markets & Biosecurity (US)
+:::
+::::
+
+:::::: {.columns .project-row}
+::: {.column width="40%"}
+![](image/projects/marketmatters.jpg){.project-img .contain width="615"}
+:::
+
+:::: {.column width="60%"}
+This project is about to start (exciting!!) and consists in a large nation-wide survey to **map and characterize management practices in US livestock markets**; Our team is focused on **identifying practical disease risk-reduction measures** in U.S. markets.
+
+### **Funding** {.pubs-title}
+
+::: pubs
+USDA-NADPRP 2025 (Co-I) — “Market Matters: A Comprehensive Survey and Outreach-Based Roadmap for Enhancing Biosecurity in Livestock Markets” (\$422,462)
+:::
+::::
+::::::
+
+# Past projects {#past-projects}
+
+:::: {.columns .project-row}
+::: {.column width="100%"}
+## Livestock Traceability & ICVI Exceptions (US)
+:::
+::::
+
+::::: {.columns .project-row}
+::: {.column width="40%"}
+![](image/projects/regulations.png){.project-img .contain}
+:::
+
+::: {.column width="60%"}
+Explore **state-level exceptions to currently implemented traceability documentation** (ICVIs) in the US; the association between number of exceptions and cattle-related patterns at the state level; and understand potential implications for cattle traceability risks.
+:::
+:::::
+
+### Peer-reviewed publications {.pubs-title}
+
+-   Sequeira *et al.* (2025) "A risk-based framework for Live Bird Shops (LBSs) in Gujarat, India: Identifying pathogen entry and exposure risk profiles". *Preventive Veterinary Medicine*. DOI: [10.1016/j.prevetmed.2025.106661](https://doi.org/10.1016/j.prevetmed.2025.106661 "Persistent link using digital object identifier")
+
+:::: {.columns .project-row}
+::: {.column width="100%"}
+## Risk-based framework for Live Bird Shops (India)
+:::
+::::
+
+::::: {.columns .project-row}
+::: {.column width="40%"}
+![](image/projects/gujarat.png){.project-img .contain width="383"}
+:::
+
+::: {.column width="60%"}
+Live bird markets (LBMs) have been associated with infectious disease risks. Live bird shops (LBSs) are more common in India. However, its role in pathogen transmission remains understudied. This Gujarat-based project investigated typical **LBSs practices** and assessed **their potential for pathogen entry and exposure to chickens and humans**.
+:::
+:::::
+
+### Peer-reviewed publications {.pubs-title}
+
+-   Sequeira *et al.* (2025) "A risk-based framework for Live Bird Shops (LBSs) in Gujarat, India: Identifying pathogen entry and exposure risk profiles". *Preventive Veterinary Medicine*. DOI: [10.1016/j.prevetmed.2025.106661](https://doi.org/10.1016/j.prevetmed.2025.106661 "Persistent link using digital object identifier")

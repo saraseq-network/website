@@ -1,0 +1,28 @@
+/* Uniform card heights: clamp description to 3 lines */
+.quarto-listing .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3.6em; /* keeps rows even */
+}
+
+/* Subtle hover lift + focus ring for a11y */
+.quarto-listing .card {
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.quarto-listing .card:has(a:hover),
+.quarto-listing .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+.quarto-listing .card:focus-within {
+  outline: 2px solid #7aa2ff;
+  outline-offset: 2px;
+}
+
+/* Tighten listing controls (search/sort/categories) */
+.quarto-listing .listing-actions {
+  gap: .5rem;
+  margin-bottom: .75rem;
+}

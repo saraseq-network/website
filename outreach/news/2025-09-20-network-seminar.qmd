@@ -1,0 +1,77 @@
+---
+title: "SNA_Learn: Networks in Animal Health"
+author: "Sara C. Sequeira"
+date: 2025-09-20
+categories: ["Teaching"]
+image: /image/outreach/network.png
+description: "Hands-on intro to animal movement network analysis in R."
+format:
+  html:
+    toc: true
+    number-sections: true
+    self-contained: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## Introduction and Example Network
+
+Animal movement connects premises (farms, markets, dealers, raisers, slaughter plants). These connections form **contact networks** that shape **pathogen spread**, **traceability** and **targeting of interventions** (e.g., targeted surveillance, biosecurity implementation and control measures). In this course, we’ll use R to:
+
+-   Build and visualize networks of animal movements.
+
+-   Compute core metrics (in/out-degree, strength, betweenness, components).
+
+-   Visualize networks and annotate nodes by type (state, breed, sex, etc).
+
+-   "Slice" networks over time to see how structure changes.
+
+> **Core idea:** Each shipment is typically a **directed edge** from origin → destination, with **weight** = number of animals moved (or shipments). Node attributes capture **premises type** (e.g., Dairy, Dealer, Market) and region (i.e., state, zip code). Edge attributes could be animal details (e.g., breeds, age, sex moved).
+
+### Load & Import the dataset
+
+To start, let's import a typical hypothetical dataset of cattle movements in the US and have a look at the variables.
+
+```{r}
+#| warning: false
+#| echo: true
+#| code-fold: false
+#| output: false
+
+library(tidyverse)
+
+movements <- readr::read_csv("data/SampleDataset_3m.csv", show_col_types = FALSE)
+
+glimpse(movements)
+```
+
+| Variable | Description | Example |
+|------------------|-----------------------------------|-------------------|
+| `date` | Date of shipment (YYYY-MM-DD) | 2025-03-15 |
+| `origin_id` | Unique code for the origin premises | P01 |
+| `origin_type` | Type of origin premises (e.g., Dairy, Dealer, Market) | Dairy |
+| `destination_id` | Unique code for the destination premises | P10 |
+| `destination_type` | Type of destination premises | Feedlot |
+| `head` | Number of animals moved in this shipment | 25 |
+| `category` | Age/production stage of animals (Calf, Feeder, Adult) | Calf |
+| `sex` | Sex of animals (M, F, Mixed) | M |
+| `breed` | Breed category (Holstein, Angus, etc.) | Holstein |
+| `purpose` | Reason for movement (Sale, Raising, Finishing, Slaughter) | Raising |
+
+### Identify the nodes
+
+Nodes are the entities in our network. In this case, each unique premises (farm, dealer, market, etc.), but it could also be a region. We can list all the unique origins and destinations to define the set of nodes.
+
+``` r
+{r}
+#| warning: false
+#| echo: true
+#| code-fold: false
+#| output: true
+
+nodes <- unique(c(movements$origin_id, movements$destination_id))
+length(nodes)   # how many unique premises?
+head(nodes, 10) # preview some IDs
+```

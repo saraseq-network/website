@@ -1,0 +1,686 @@
+ship_id,date,origin_name,origin_type,origin_state,destination_name,destination_type,destination_state,head,species,category,sex,breed,purpose
+S00001,3/1/25,River Beef Ranch,Beef,IA,Pioneer Dealer,Dealer,OH,7,Cattle,Adult,M,Angus,Sale
+S00002,3/1/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,16,Cattle,Weanling,M,Hereford,Finishing
+S00003,3/1/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,27,Cattle,Feeder,M,Holstein,Sale
+S00004,3/1/25,Oak Dairy,Dairy,OH,Metro Market,Market,MI,17,Cattle,Calf,M,Holstein,Raising
+S00005,3/1/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,9,Cattle,Adult,F,Simmental,Slaughter
+S00006,3/1/25,South Dealer,Dealer,KY,Prairie Feedlot,Feedlot,NE,27,Cattle,Feeder,Mixed,Hereford,Finishing
+S00007,3/2/25,Sunrise Calf Raiser,CalfRaiser,MI,Central Market,Market,IL,31,Cattle,Feeder,F,Crossbred,Sale
+S00008,3/2/25,Green Dairy,Dairy,OH,North Dealer,Dealer,OH,17,Cattle,Calf,M,Holstein,Sale
+S00009,3/2/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,12,Cattle,Adult,M,Holstein,Slaughter
+S00010,3/3/25,Central Market,Market,IL,Valley Raiser,CalfRaiser,IN,21,Cattle,Weanling,M,Angus,Raising
+S00011,3/3/25,Metro Market,Market,MI,Harvest Slaughter,Slaughter,IL,3,Cattle,Adult,F,Holstein,Slaughter
+S00012,3/3/25,Oak Dairy,Dairy,OH,Metro Market,Market,MI,15,Cattle,Calf,M,Holstein,Sale
+S00013,3/3/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,16,Cattle,Feeder,M,Hereford,Finishing
+S00014,3/3/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,11,Cattle,Calf,F,Angus,Sale
+S00015,3/3/25,South Dealer,Dealer,KY,Sunrise Calf Raiser,CalfRaiser,MI,14,Cattle,Calf,M,Angus,Raising
+S00016,3/3/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,10,Cattle,Adult,F,Hereford,Slaughter
+S00017,3/4/25,Central Market,Market,IL,Sunrise Calf Raiser,CalfRaiser,MI,10,Cattle,Adult,Mixed,Crossbred,Raising
+S00018,3/4/25,Pioneer Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,28,Cattle,Feeder,M,Crossbred,Finishing
+S00019,3/4/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,10,Cattle,Weanling,M,Holstein,Finishing
+S00020,3/4/25,Green Dairy,Dairy,OH,Metro Market,Market,MI,15,Cattle,Calf,F,Holstein,Sale
+S00021,3/4/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,9,Cattle,Adult,Mixed,Hereford,Slaughter
+S00022,3/4/25,Pioneer Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,27,Cattle,Feeder,M,Crossbred,Finishing
+S00023,3/4/25,Hillside Calf Raiser,CalfRaiser,PA,Central Market,Market,IL,30,Cattle,Feeder,Mixed,Angus,Sale
+S00024,3/4/25,Blue Beef Ranch,Beef,WI,Mesa Feedlot,Feedlot,KS,37,Cattle,Feeder,F,Angus,Finishing
+S00025,3/5/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,16,Cattle,Weanling,F,Hereford,Finishing
+S00026,3/5/25,Blue Beef Ranch,Beef,WI,Central Market,Market,IL,7,Cattle,Adult,Mixed,Holstein,Sale
+S00027,3/5/25,County Market,Market,IN,Sunrise Calf Raiser,CalfRaiser,MI,22,Cattle,Weanling,M,Holstein,Raising
+S00028,3/5/25,Vista Slaughter,Slaughter,OH,Metro Market,Market,MI,14,Cattle,Weanling,Mixed,Crossbred,Finishing
+S00029,3/5/25,Pioneer Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,20,Cattle,Weanling,M,Angus,Raising
+S00030,3/5/25,Lake Dairy,Dairy,PA,Hillside Calf Raiser,CalfRaiser,PA,14,Cattle,Calf,M,Angus,Raising
+S00031,3/6/25,Sunrise Calf Raiser,CalfRaiser,MI,Mesa Feedlot,Feedlot,KS,27,Cattle,Feeder,M,Holstein,Finishing
+S00032,3/6/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,3,Cattle,Adult,M,Crossbred,Slaughter
+S00033,3/6/25,Green Dairy,Dairy,OH,Central Market,Market,IL,8,Cattle,Calf,M,Holstein,Sale
+S00034,3/6/25,Green Dairy,Dairy,OH,South Dealer,Dealer,KY,14,Cattle,Calf,M,Hereford,Sale
+S00035,3/6/25,Lake Dairy,Dairy,PA,Sunrise Calf Raiser,CalfRaiser,MI,9,Cattle,Calf,F,Holstein,Raising
+S00036,3/6/25,Oak Dairy,Dairy,OH,Central Market,Market,IL,17,Cattle,Weanling,F,Angus,Sale
+S00037,3/6/25,Maple Dairy,Dairy,NY,Hillside Calf Raiser,CalfRaiser,PA,9,Cattle,Calf,M,Holstein,Raising
+S00038,3/6/25,County Market,Market,IN,North Dealer,Dealer,OH,23,Cattle,Feeder,M,Hereford,Sale
+S00039,3/6/25,Harvest Slaughter,Slaughter,IL,South Dealer,Dealer,KY,19,Cattle,Feeder,F,Crossbred,Raising
+S00040,3/6/25,Green Dairy,Dairy,OH,Hillside Calf Raiser,CalfRaiser,PA,9,Cattle,Calf,F,Simmental,Raising
+S00041,3/7/25,Central Market,Market,IL,Mesa Feedlot,Feedlot,KS,23,Cattle,Feeder,M,Holstein,Finishing
+S00042,3/7/25,North Dealer,Dealer,OH,Harvest Slaughter,Slaughter,IL,37,Cattle,Feeder,F,Angus,Slaughter
+S00043,3/7/25,Mesa Feedlot,Feedlot,KS,Metro Market,Market,MI,13,Cattle,Calf,Mixed,Crossbred,Sale
+S00044,3/7/25,Cedar Beef Ranch,Beef,MO,Mesa Feedlot,Feedlot,KS,30,Cattle,Feeder,F,Simmental,Finishing
+S00045,3/7/25,Harvest Slaughter,Slaughter,IL,Metro Market,Market,MI,17,Cattle,Weanling,M,Crossbred,Sale
+S00046,3/7/25,Blue Beef Ranch,Beef,WI,Prairie Feedlot,Feedlot,NE,17,Cattle,Feeder,Mixed,Angus,Finishing
+S00047,3/7/25,Sunrise Calf Raiser,CalfRaiser,MI,County Market,Market,IN,10,Cattle,Adult,F,Holstein,Sale
+S00048,3/7/25,Cedar Beef Ranch,Beef,MO,Central Market,Market,IL,10,Cattle,Adult,Mixed,Holstein,Slaughter
+S00049,3/7/25,Cedar Beef Ranch,Beef,MO,Pioneer Dealer,Dealer,OH,19,Cattle,Calf,F,Holstein,Sale
+S00050,3/8/25,South Dealer,Dealer,KY,Hillside Calf Raiser,CalfRaiser,PA,29,Cattle,Feeder,M,Crossbred,Raising
+S00051,3/8/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,34,Cattle,Feeder,Mixed,Crossbred,Slaughter
+S00052,3/8/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,35,Cattle,Feeder,M,Holstein,Finishing
+S00053,3/8/25,River Beef Ranch,Beef,IA,Pioneer Dealer,Dealer,OH,12,Cattle,Calf,M,Crossbred,Sale
+S00054,3/8/25,County Market,Market,IN,North Dealer,Dealer,OH,12,Cattle,Calf,M,Crossbred,Finishing
+S00055,3/8/25,Pioneer Dealer,Dealer,OH,Harvest Slaughter,Slaughter,IL,12,Cattle,Adult,F,Holstein,Slaughter
+S00056,3/8/25,North Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,30,Cattle,Feeder,F,Angus,Finishing
+S00057,3/8/25,Sunrise Calf Raiser,CalfRaiser,MI,Mesa Feedlot,Feedlot,KS,24,Cattle,Feeder,M,Crossbred,Finishing
+S00058,3/9/25,South Dealer,Dealer,KY,Sunrise Calf Raiser,CalfRaiser,MI,18,Cattle,Feeder,M,Angus,Raising
+S00059,3/9/25,Pioneer Dealer,Dealer,OH,Harvest Slaughter,Slaughter,IL,8,Cattle,Adult,Mixed,Holstein,Slaughter
+S00060,3/9/25,Oak Dairy,Dairy,OH,North Dealer,Dealer,OH,11,Cattle,Calf,M,Angus,Sale
+S00061,3/9/25,Pioneer Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,18,Cattle,Weanling,F,Angus,Finishing
+S00062,3/10/25,South Dealer,Dealer,KY,Hillside Calf Raiser,CalfRaiser,PA,14,Cattle,Weanling,M,Angus,Raising
+S00063,3/10/25,Green Dairy,Dairy,OH,County Market,Market,IN,9,Cattle,Calf,M,Crossbred,Sale
+S00064,3/10/25,North Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,26,Cattle,Feeder,M,Crossbred,Finishing
+S00065,3/10/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,16,Cattle,Feeder,M,Hereford,Finishing
+S00066,3/10/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,6,Cattle,Adult,M,Angus,Slaughter
+S00067,3/10/25,Vista Slaughter,Slaughter,OH,County Market,Market,IN,14,Cattle,Weanling,F,Angus,Raising
+S00068,3/11/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,10,Cattle,Weanling,M,Holstein,Finishing
+S00069,3/11/25,North Dealer,Dealer,OH,Metro Market,Market,MI,20,Cattle,Weanling,F,Holstein,Sale
+S00070,3/11/25,South Dealer,Dealer,KY,Mesa Feedlot,Feedlot,KS,33,Cattle,Feeder,Mixed,Holstein,Finishing
+S00071,3/11/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,29,Cattle,Feeder,F,Angus,Finishing
+S00072,3/11/25,Oak Dairy,Dairy,OH,Metro Market,Market,MI,18,Cattle,Weanling,F,Angus,Raising
+S00073,3/11/25,Harvest Slaughter,Slaughter,IL,Metro Market,Market,MI,17,Cattle,Weanling,M,Angus,Sale
+S00074,3/11/25,South Dealer,Dealer,KY,Sunrise Calf Raiser,CalfRaiser,MI,16,Cattle,Weanling,M,Hereford,Raising
+S00075,3/12/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,31,Cattle,Feeder,F,Crossbred,Finishing
+S00076,3/12/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,12,Cattle,Adult,M,Hereford,Slaughter
+S00077,3/13/25,County Market,Market,IN,Mesa Feedlot,Feedlot,KS,33,Cattle,Feeder,M,Holstein,Finishing
+S00078,3/13/25,Metro Market,Market,MI,Hillside Calf Raiser,CalfRaiser,PA,20,Cattle,Feeder,F,Angus,Raising
+S00079,3/13/25,Central Market,Market,IL,Mesa Feedlot,Feedlot,KS,16,Cattle,Weanling,M,Hereford,Finishing
+S00080,3/13/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,26,Cattle,Feeder,F,Holstein,Finishing
+S00081,3/13/25,South Dealer,Dealer,KY,Mesa Feedlot,Feedlot,KS,29,Cattle,Feeder,F,Simmental,Finishing
+S00082,3/13/25,South Dealer,Dealer,KY,Sunrise Calf Raiser,CalfRaiser,MI,15,Cattle,Weanling,Mixed,Holstein,Raising
+S00083,3/13/25,Blue Beef Ranch,Beef,WI,Central Market,Market,IL,10,Cattle,Weanling,F,Angus,Sale
+S00084,3/13/25,Central Market,Market,IL,Harvest Slaughter,Slaughter,IL,5,Cattle,Adult,M,Holstein,Slaughter
+S00085,3/13/25,Metro Market,Market,MI,Mesa Feedlot,Feedlot,KS,19,Cattle,Feeder,M,Holstein,Finishing
+S00086,3/13/25,County Market,Market,IN,Mesa Feedlot,Feedlot,KS,23,Cattle,Feeder,F,Angus,Finishing
+S00087,3/13/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,20,Cattle,Weanling,M,Angus,Finishing
+S00088,3/13/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,25,Cattle,Feeder,Mixed,Angus,Finishing
+S00089,3/13/25,Lake Dairy,Dairy,PA,North Dealer,Dealer,OH,13,Cattle,Weanling,M,Holstein,Sale
+S00090,3/13/25,Lake Dairy,Dairy,PA,Valley Raiser,CalfRaiser,IN,10,Cattle,Calf,M,Simmental,Raising
+S00091,3/14/25,County Market,Market,IN,Mesa Feedlot,Feedlot,KS,19,Cattle,Weanling,M,Angus,Finishing
+S00092,3/14/25,Cedar Beef Ranch,Beef,MO,North Dealer,Dealer,OH,19,Cattle,Weanling,M,Holstein,Raising
+S00093,3/14/25,Central Market,Market,IL,Valley Raiser,CalfRaiser,IN,28,Cattle,Feeder,M,Holstein,Raising
+S00094,3/14/25,Green Dairy,Dairy,OH,County Market,Market,IN,10,Cattle,Calf,M,Holstein,Raising
+S00095,3/14/25,Harvest Slaughter,Slaughter,IL,South Dealer,Dealer,KY,14,Cattle,Calf,F,Simmental,Raising
+S00096,3/14/25,Metro Market,Market,MI,Mesa Feedlot,Feedlot,KS,36,Cattle,Feeder,M,Holstein,Finishing
+S00097,3/14/25,Metro Market,Market,MI,North Dealer,Dealer,OH,9,Cattle,Weanling,M,Holstein,Sale
+S00098,3/14/25,Cedar Beef Ranch,Beef,MO,South Dealer,Dealer,KY,22,Cattle,Weanling,M,Crossbred,Sale
+S00099,3/14/25,Harvest Slaughter,Slaughter,IL,North Dealer,Dealer,OH,13,Cattle,Adult,M,Holstein,Sale
+S00100,3/14/25,Maple Dairy,Dairy,NY,Central Market,Market,IL,9,Cattle,Calf,M,Jersey,Sale
+S00101,3/15/25,South Dealer,Dealer,KY,Mesa Feedlot,Feedlot,KS,24,Cattle,Feeder,M,Angus,Finishing
+S00102,3/15/25,County Market,Market,IN,Vista Slaughter,Slaughter,OH,18,Cattle,Feeder,M,Crossbred,Slaughter
+S00103,3/15/25,Oak Dairy,Dairy,OH,Metro Market,Market,MI,19,Cattle,Weanling,Mixed,Angus,Slaughter
+S00104,3/15/25,Mesa Feedlot,Feedlot,KS,South Dealer,Dealer,KY,5,Cattle,Adult,F,Angus,Sale
+S00105,3/15/25,Harvest Slaughter,Slaughter,IL,County Market,Market,IN,11,Cattle,Calf,M,Crossbred,Sale
+S00106,3/15/25,Central Market,Market,IL,Sunrise Calf Raiser,CalfRaiser,MI,31,Cattle,Feeder,F,Holstein,Raising
+S00107,3/16/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,28,Cattle,Feeder,F,Holstein,Finishing
+S00108,3/16/25,Cedar Beef Ranch,Beef,MO,Metro Market,Market,MI,29,Cattle,Feeder,F,Holstein,Sale
+S00109,3/16/25,Lake Dairy,Dairy,PA,Hillside Calf Raiser,CalfRaiser,PA,13,Cattle,Calf,M,Crossbred,Raising
+S00110,3/16/25,Mesa Feedlot,Feedlot,KS,Central Market,Market,IL,11,Cattle,Adult,M,Hereford,Sale
+S00111,3/17/25,Pioneer Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,24,Cattle,Feeder,M,Holstein,Finishing
+S00112,3/17/25,Green Dairy,Dairy,OH,North Dealer,Dealer,OH,14,Cattle,Calf,M,Holstein,Sale
+S00113,3/17/25,Maple Dairy,Dairy,NY,Central Market,Market,IL,11,Cattle,Calf,F,Angus,Sale
+S00114,3/17/25,Harvest Slaughter,Slaughter,IL,Metro Market,Market,MI,25,Cattle,Feeder,F,Holstein,Finishing
+S00115,3/17/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,15,Cattle,Weanling,Mixed,Angus,Finishing
+S00116,3/18/25,Sunrise Calf Raiser,CalfRaiser,MI,Mesa Feedlot,Feedlot,KS,20,Cattle,Feeder,F,Hereford,Finishing
+S00117,3/18/25,Cedar Beef Ranch,Beef,MO,Pioneer Dealer,Dealer,OH,9,Cattle,Adult,F,Holstein,Finishing
+S00118,3/18/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,28,Cattle,Feeder,M,Angus,Sale
+S00119,3/18/25,South Dealer,Dealer,KY,Hillside Calf Raiser,CalfRaiser,PA,22,Cattle,Calf,F,Simmental,Raising
+S00120,3/18/25,North Dealer,Dealer,OH,County Market,Market,IN,13,Cattle,Calf,F,Holstein,Raising
+S00121,3/18/25,North Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,21,Cattle,Weanling,F,Crossbred,Finishing
+S00122,3/18/25,Lake Dairy,Dairy,PA,Valley Raiser,CalfRaiser,IN,15,Cattle,Calf,F,Holstein,Raising
+S00123,3/18/25,Cedar Beef Ranch,Beef,MO,Mesa Feedlot,Feedlot,KS,19,Cattle,Feeder,F,Holstein,Finishing
+S00124,3/18/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,26,Cattle,Feeder,M,Hereford,Finishing
+S00125,3/19/25,River Beef Ranch,Beef,IA,Prairie Feedlot,Feedlot,NE,30,Cattle,Feeder,F,Holstein,Finishing
+S00126,3/19/25,Valley Raiser,CalfRaiser,IN,Pioneer Dealer,Dealer,OH,14,Cattle,Weanling,M,Holstein,Sale
+S00127,3/19/25,River Beef Ranch,Beef,IA,Metro Market,Market,MI,7,Cattle,Adult,Mixed,Hereford,Sale
+S00128,3/19/25,Pioneer Dealer,Dealer,OH,Vista Slaughter,Slaughter,OH,25,Cattle,Feeder,M,Hereford,Slaughter
+S00129,3/19/25,River Beef Ranch,Beef,IA,Pioneer Dealer,Dealer,OH,12,Cattle,Calf,M,Crossbred,Raising
+S00130,3/19/25,Cedar Beef Ranch,Beef,MO,South Dealer,Dealer,KY,15,Cattle,Calf,F,Angus,Slaughter
+S00131,3/19/25,Mesa Feedlot,Feedlot,KS,Central Market,Market,IL,7,Cattle,Calf,M,Angus,Sale
+S00132,3/19/25,Cedar Beef Ranch,Beef,MO,County Market,Market,IN,7,Cattle,Adult,Mixed,Angus,Sale
+S00133,3/19/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,17,Cattle,Weanling,F,Holstein,Finishing
+S00134,3/19/25,Green Dairy,Dairy,OH,Central Market,Market,IL,7,Cattle,Calf,M,Hereford,Sale
+S00135,3/19/25,Pioneer Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,30,Cattle,Feeder,M,Holstein,Finishing
+S00136,3/19/25,Pioneer Dealer,Dealer,OH,Sunrise Calf Raiser,CalfRaiser,MI,14,Cattle,Calf,M,Holstein,Raising
+S00137,3/19/25,Vista Slaughter,Slaughter,OH,Pioneer Dealer,Dealer,OH,4,Cattle,Adult,F,Holstein,Sale
+S00138,3/20/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,13,Cattle,Adult,F,Crossbred,Slaughter
+S00139,3/20/25,Blue Beef Ranch,Beef,WI,Metro Market,Market,MI,10,Cattle,Adult,Mixed,Holstein,Slaughter
+S00140,3/20/25,South Dealer,Dealer,KY,Harvest Slaughter,Slaughter,IL,4,Cattle,Adult,M,Angus,Slaughter
+S00141,3/20/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,30,Cattle,Feeder,M,Angus,Finishing
+S00142,3/20/25,South Dealer,Dealer,KY,Vista Slaughter,Slaughter,OH,32,Cattle,Feeder,M,Crossbred,Slaughter
+S00143,3/20/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,34,Cattle,Feeder,M,Angus,Finishing
+S00144,3/20/25,Central Market,Market,IL,Harvest Slaughter,Slaughter,IL,10,Cattle,Adult,Mixed,Angus,Slaughter
+S00145,3/21/25,Valley Raiser,CalfRaiser,IN,County Market,Market,IN,10,Cattle,Adult,F,Angus,Finishing
+S00146,3/21/25,Oak Dairy,Dairy,OH,North Dealer,Dealer,OH,12,Cattle,Calf,M,Angus,Raising
+S00147,3/21/25,Central Market,Market,IL,Prairie Feedlot,Feedlot,NE,32,Cattle,Feeder,M,Holstein,Finishing
+S00148,3/21/25,South Dealer,Dealer,KY,Vista Slaughter,Slaughter,OH,22,Cattle,Feeder,F,Holstein,Slaughter
+S00149,3/21/25,Cedar Beef Ranch,Beef,MO,South Dealer,Dealer,KY,23,Cattle,Feeder,M,Holstein,Slaughter
+S00150,3/21/25,Oak Dairy,Dairy,OH,Sunrise Calf Raiser,CalfRaiser,MI,21,Cattle,Calf,F,Angus,Raising
+S00151,3/21/25,Blue Beef Ranch,Beef,WI,Central Market,Market,IL,14,Cattle,Weanling,M,Holstein,Sale
+S00152,3/21/25,North Dealer,Dealer,OH,Vista Slaughter,Slaughter,OH,7,Cattle,Adult,Mixed,Simmental,Slaughter
+S00153,3/21/25,North Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,16,Cattle,Weanling,F,Angus,Raising
+S00154,3/22/25,North Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,30,Cattle,Feeder,M,Holstein,Finishing
+S00155,3/22/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,35,Cattle,Feeder,Mixed,Crossbred,Finishing
+S00156,3/22/25,Oak Dairy,Dairy,OH,North Dealer,Dealer,OH,14,Cattle,Weanling,F,Holstein,Raising
+S00157,3/22/25,Pioneer Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,24,Cattle,Feeder,F,Angus,Finishing
+S00158,3/22/25,South Dealer,Dealer,KY,Sunrise Calf Raiser,CalfRaiser,MI,9,Cattle,Weanling,F,Hereford,Raising
+S00159,3/22/25,Sunrise Calf Raiser,CalfRaiser,MI,Mesa Feedlot,Feedlot,KS,32,Cattle,Feeder,M,Holstein,Finishing
+S00160,3/23/25,Pioneer Dealer,Dealer,OH,Central Market,Market,IL,24,Cattle,Feeder,M,Holstein,Sale
+S00161,3/23/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,8,Cattle,Adult,Mixed,Holstein,Slaughter
+S00162,3/23/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,8,Cattle,Adult,Mixed,Simmental,Slaughter
+S00163,3/23/25,Harvest Slaughter,Slaughter,IL,Metro Market,Market,MI,16,Cattle,Weanling,F,Hereford,Sale
+S00164,3/23/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,12,Cattle,Adult,M,Crossbred,Slaughter
+S00165,3/23/25,Maple Dairy,Dairy,NY,Metro Market,Market,MI,9,Cattle,Calf,M,Holstein,Raising
+S00166,3/23/25,Lake Dairy,Dairy,PA,North Dealer,Dealer,OH,6,Cattle,Calf,M,Angus,Raising
+S00167,3/24/25,Vista Slaughter,Slaughter,OH,County Market,Market,IN,22,Cattle,Weanling,M,Hereford,Sale
+S00168,3/24/25,Metro Market,Market,MI,Valley Raiser,CalfRaiser,IN,10,Cattle,Calf,M,Angus,Raising
+S00169,3/24/25,River Beef Ranch,Beef,IA,Pioneer Dealer,Dealer,OH,7,Cattle,Calf,M,Angus,Raising
+S00170,3/25/25,South Dealer,Dealer,KY,Hillside Calf Raiser,CalfRaiser,PA,8,Cattle,Adult,F,Crossbred,Raising
+S00171,3/25/25,Cedar Beef Ranch,Beef,MO,North Dealer,Dealer,OH,7,Cattle,Adult,Mixed,Holstein,Raising
+S00172,3/25/25,Blue Beef Ranch,Beef,WI,Pioneer Dealer,Dealer,OH,10,Cattle,Weanling,M,Crossbred,Raising
+S00173,3/25/25,Oak Dairy,Dairy,OH,Metro Market,Market,MI,11,Cattle,Calf,M,Holstein,Finishing
+S00174,3/26/25,Pioneer Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,20,Cattle,Feeder,M,Simmental,Raising
+S00175,3/26/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,14,Cattle,Calf,M,Hereford,Sale
+S00176,3/26/25,Blue Beef Ranch,Beef,WI,Mesa Feedlot,Feedlot,KS,31,Cattle,Feeder,M,Angus,Finishing
+S00177,3/26/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,11,Cattle,Weanling,Mixed,Crossbred,Finishing
+S00178,3/26/25,Vista Slaughter,Slaughter,OH,Pioneer Dealer,Dealer,OH,28,Cattle,Feeder,F,Hereford,Sale
+S00179,3/26/25,South Dealer,Dealer,KY,Metro Market,Market,MI,21,Cattle,Feeder,M,Crossbred,Raising
+S00180,3/26/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,22,Cattle,Feeder,M,Holstein,Sale
+S00181,3/26/25,Maple Dairy,Dairy,NY,County Market,Market,IN,17,Cattle,Calf,M,Hereford,Sale
+S00182,3/26/25,Central Market,Market,IL,Valley Raiser,CalfRaiser,IN,31,Cattle,Feeder,F,Angus,Raising
+S00183,3/26/25,Valley Raiser,CalfRaiser,IN,Mesa Feedlot,Feedlot,KS,21,Cattle,Feeder,Mixed,Holstein,Finishing
+S00184,3/26/25,Vista Slaughter,Slaughter,OH,North Dealer,Dealer,OH,16,Cattle,Calf,M,Holstein,Sale
+S00185,3/26/25,Sunrise Calf Raiser,CalfRaiser,MI,Central Market,Market,IL,9,Cattle,Calf,M,Angus,Sale
+S00186,3/27/25,South Dealer,Dealer,KY,Prairie Feedlot,Feedlot,NE,22,Cattle,Feeder,M,Jersey,Finishing
+S00187,3/27/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,28,Cattle,Feeder,F,Hereford,Finishing
+S00188,3/27/25,Hillside Calf Raiser,CalfRaiser,PA,South Dealer,Dealer,KY,6,Cattle,Adult,Mixed,Hereford,Finishing
+S00189,3/27/25,Harvest Slaughter,Slaughter,IL,North Dealer,Dealer,OH,21,Cattle,Calf,M,Holstein,Sale
+S00190,3/27/25,Cedar Beef Ranch,Beef,MO,Metro Market,Market,MI,31,Cattle,Feeder,M,Angus,Finishing
+S00191,3/27/25,Sunrise Calf Raiser,CalfRaiser,MI,Pioneer Dealer,Dealer,OH,27,Cattle,Weanling,F,Hereford,Sale
+S00192,3/27/25,Cedar Beef Ranch,Beef,MO,North Dealer,Dealer,OH,10,Cattle,Calf,M,Simmental,Sale
+S00193,3/27/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,19,Cattle,Feeder,M,Angus,Finishing
+S00194,3/27/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,28,Cattle,Feeder,M,Holstein,Finishing
+S00195,3/28/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,22,Cattle,Feeder,M,Crossbred,Finishing
+S00196,3/28/25,Vista Slaughter,Slaughter,OH,Metro Market,Market,MI,21,Cattle,Feeder,M,Crossbred,Sale
+S00197,3/28/25,Pioneer Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,9,Cattle,Calf,F,Crossbred,Raising
+S00198,3/28/25,Valley Raiser,CalfRaiser,IN,Central Market,Market,IL,20,Cattle,Feeder,M,Crossbred,Raising
+S00199,3/28/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,11,Cattle,Weanling,F,Crossbred,Finishing
+S00200,3/28/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,27,Cattle,Feeder,F,Crossbred,Slaughter
+S00201,3/28/25,Metro Market,Market,MI,Sunrise Calf Raiser,CalfRaiser,MI,24,Cattle,Feeder,M,Angus,Raising
+S00202,3/28/25,Vista Slaughter,Slaughter,OH,County Market,Market,IN,28,Cattle,Feeder,M,Angus,Sale
+S00203,3/28/25,Cedar Beef Ranch,Beef,MO,Prairie Feedlot,Feedlot,NE,32,Cattle,Feeder,F,Crossbred,Finishing
+S00204,3/28/25,Blue Beef Ranch,Beef,WI,Metro Market,Market,MI,12,Cattle,Adult,M,Hereford,Sale
+S00205,3/28/25,Central Market,Market,IL,Prairie Feedlot,Feedlot,NE,17,Cattle,Weanling,F,Holstein,Finishing
+S00206,3/29/25,Harvest Slaughter,Slaughter,IL,South Dealer,Dealer,KY,14,Cattle,Weanling,F,Crossbred,Raising
+S00207,3/29/25,Mesa Feedlot,Feedlot,KS,Metro Market,Market,MI,12,Cattle,Calf,F,Holstein,Sale
+S00208,3/29/25,South Dealer,Dealer,KY,Mesa Feedlot,Feedlot,KS,27,Cattle,Feeder,M,Angus,Finishing
+S00209,3/29/25,River Beef Ranch,Beef,IA,North Dealer,Dealer,OH,15,Cattle,Calf,F,Hereford,Finishing
+S00210,3/29/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,21,Cattle,Weanling,M,Angus,Finishing
+S00211,3/29/25,Maple Dairy,Dairy,NY,Metro Market,Market,MI,14,Cattle,Calf,Mixed,Jersey,Raising
+S00212,3/29/25,Harvest Slaughter,Slaughter,IL,Pioneer Dealer,Dealer,OH,9,Cattle,Calf,M,Crossbred,Raising
+S00213,3/29/25,River Beef Ranch,Beef,IA,Mesa Feedlot,Feedlot,KS,8,Cattle,Weanling,M,Holstein,Finishing
+S00214,3/29/25,Cedar Beef Ranch,Beef,MO,Prairie Feedlot,Feedlot,NE,13,Cattle,Weanling,M,Crossbred,Finishing
+S00215,3/30/25,Valley Raiser,CalfRaiser,IN,Mesa Feedlot,Feedlot,KS,16,Cattle,Weanling,M,Crossbred,Finishing
+S00216,3/30/25,Pioneer Dealer,Dealer,OH,County Market,Market,IN,12,Cattle,Adult,F,Holstein,Finishing
+S00217,3/31/25,Central Market,Market,IL,Sunrise Calf Raiser,CalfRaiser,MI,17,Cattle,Feeder,M,Holstein,Raising
+S00218,3/31/25,Green Dairy,Dairy,OH,Central Market,Market,IL,17,Cattle,Calf,M,Angus,Raising
+S00219,3/31/25,Cedar Beef Ranch,Beef,MO,Central Market,Market,IL,12,Cattle,Adult,M,Hereford,Sale
+S00220,3/31/25,Oak Dairy,Dairy,OH,Pioneer Dealer,Dealer,OH,17,Cattle,Weanling,F,Angus,Sale
+S00221,4/1/25,North Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,31,Cattle,Feeder,Mixed,Angus,Finishing
+S00222,4/1/25,Metro Market,Market,MI,Hillside Calf Raiser,CalfRaiser,PA,9,Cattle,Adult,F,Crossbred,Raising
+S00223,4/1/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,11,Cattle,Adult,Mixed,Simmental,Slaughter
+S00224,4/1/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,29,Cattle,Feeder,M,Crossbred,Slaughter
+S00225,4/1/25,Hillside Calf Raiser,CalfRaiser,PA,County Market,Market,IN,19,Cattle,Weanling,F,Crossbred,Sale
+S00226,4/1/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,26,Cattle,Feeder,M,Angus,Finishing
+S00227,4/1/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,23,Cattle,Feeder,F,Crossbred,Finishing
+S00228,4/2/25,Maple Dairy,Dairy,NY,North Dealer,Dealer,OH,16,Cattle,Calf,M,Holstein,Raising
+S00229,4/2/25,Cedar Beef Ranch,Beef,MO,South Dealer,Dealer,KY,9,Cattle,Adult,F,Hereford,Finishing
+S00230,4/2/25,North Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,31,Cattle,Feeder,M,Jersey,Finishing
+S00231,4/2/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,9,Cattle,Adult,M,Crossbred,Slaughter
+S00232,4/2/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,11,Cattle,Adult,Mixed,Holstein,Slaughter
+S00233,4/2/25,Lake Dairy,Dairy,PA,Central Market,Market,IL,7,Cattle,Calf,M,Angus,Sale
+S00234,4/3/25,Maple Dairy,Dairy,NY,Sunrise Calf Raiser,CalfRaiser,MI,8,Cattle,Calf,Mixed,Hereford,Raising
+S00235,4/3/25,Cedar Beef Ranch,Beef,MO,Mesa Feedlot,Feedlot,KS,27,Cattle,Feeder,M,Holstein,Finishing
+S00236,4/3/25,Maple Dairy,Dairy,NY,Central Market,Market,IL,17,Cattle,Weanling,M,Hereford,Raising
+S00237,4/3/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,10,Cattle,Adult,Mixed,Holstein,Slaughter
+S00238,4/3/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,18,Cattle,Calf,M,Angus,Sale
+S00239,4/3/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,10,Cattle,Adult,F,Holstein,Slaughter
+S00240,4/3/25,Vista Slaughter,Slaughter,OH,South Dealer,Dealer,KY,23,Cattle,Weanling,M,Hereford,Sale
+S00241,4/3/25,Pioneer Dealer,Dealer,OH,Sunrise Calf Raiser,CalfRaiser,MI,27,Cattle,Feeder,F,Holstein,Raising
+S00242,4/3/25,North Dealer,Dealer,OH,Sunrise Calf Raiser,CalfRaiser,MI,22,Cattle,Feeder,M,Angus,Raising
+S00243,4/3/25,Maple Dairy,Dairy,NY,Hillside Calf Raiser,CalfRaiser,PA,14,Cattle,Calf,F,Simmental,Raising
+S00244,4/4/25,Vista Slaughter,Slaughter,OH,Pioneer Dealer,Dealer,OH,25,Cattle,Feeder,M,Holstein,Sale
+S00245,4/4/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,28,Cattle,Feeder,F,Angus,Sale
+S00246,4/4/25,Lake Dairy,Dairy,PA,North Dealer,Dealer,OH,9,Cattle,Calf,F,Crossbred,Sale
+S00247,4/4/25,Cedar Beef Ranch,Beef,MO,Prairie Feedlot,Feedlot,NE,31,Cattle,Feeder,M,Angus,Finishing
+S00248,4/4/25,Lake Dairy,Dairy,PA,North Dealer,Dealer,OH,10,Cattle,Calf,F,Holstein,Sale
+S00249,4/4/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,17,Cattle,Feeder,F,Angus,Finishing
+S00250,4/4/25,Pioneer Dealer,Dealer,OH,Sunrise Calf Raiser,CalfRaiser,MI,13,Cattle,Adult,M,Crossbred,Raising
+S00251,4/4/25,Pioneer Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,5,Cattle,Adult,Mixed,Angus,Raising
+S00252,4/4/25,Oak Dairy,Dairy,OH,South Dealer,Dealer,KY,16,Cattle,Weanling,F,Angus,Sale
+S00253,4/4/25,River Beef Ranch,Beef,IA,South Dealer,Dealer,KY,16,Cattle,Weanling,M,Simmental,Sale
+S00254,4/4/25,Green Dairy,Dairy,OH,North Dealer,Dealer,OH,12,Cattle,Calf,M,Crossbred,Sale
+S00255,4/4/25,River Beef Ranch,Beef,IA,South Dealer,Dealer,KY,17,Cattle,Calf,M,Angus,Sale
+S00256,4/4/25,Pioneer Dealer,Dealer,OH,Harvest Slaughter,Slaughter,IL,4,Cattle,Adult,Mixed,Crossbred,Slaughter
+S00257,4/5/25,Vista Slaughter,Slaughter,OH,North Dealer,Dealer,OH,16,Cattle,Weanling,Mixed,Crossbred,Raising
+S00258,4/5/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,6,Cattle,Adult,Mixed,Jersey,Slaughter
+S00259,4/5/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,9,Cattle,Adult,F,Simmental,Slaughter
+S00260,4/5/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,12,Cattle,Adult,Mixed,Crossbred,Slaughter
+S00261,4/5/25,Central Market,Market,IL,Mesa Feedlot,Feedlot,KS,21,Cattle,Feeder,F,Angus,Finishing
+S00262,4/5/25,River Beef Ranch,Beef,IA,Mesa Feedlot,Feedlot,KS,25,Cattle,Feeder,F,Jersey,Finishing
+S00263,4/5/25,Metro Market,Market,MI,South Dealer,Dealer,KY,13,Cattle,Adult,Mixed,Holstein,Sale
+S00264,4/5/25,Green Dairy,Dairy,OH,South Dealer,Dealer,KY,14,Cattle,Calf,M,Jersey,Finishing
+S00265,4/5/25,Blue Beef Ranch,Beef,WI,Mesa Feedlot,Feedlot,KS,29,Cattle,Feeder,M,Crossbred,Finishing
+S00266,4/6/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,4,Cattle,Adult,Mixed,Hereford,Slaughter
+S00267,4/6/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,7,Cattle,Weanling,M,Holstein,Sale
+S00268,4/7/25,Harvest Slaughter,Slaughter,IL,County Market,Market,IN,11,Cattle,Adult,M,Holstein,Raising
+S00269,4/7/25,Metro Market,Market,MI,North Dealer,Dealer,OH,10,Cattle,Adult,Mixed,Holstein,Finishing
+S00270,4/7/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,17,Cattle,Weanling,F,Jersey,Finishing
+S00271,4/7/25,Cedar Beef Ranch,Beef,MO,Prairie Feedlot,Feedlot,NE,24,Cattle,Feeder,F,Holstein,Finishing
+S00272,4/7/25,Hillside Calf Raiser,CalfRaiser,PA,Pioneer Dealer,Dealer,OH,12,Cattle,Calf,F,Holstein,Sale
+S00273,4/7/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,37,Cattle,Feeder,M,Holstein,Finishing
+S00274,4/7/25,River Beef Ranch,Beef,IA,Central Market,Market,IL,10,Cattle,Adult,Mixed,Holstein,Sale
+S00275,4/7/25,County Market,Market,IN,Sunrise Calf Raiser,CalfRaiser,MI,12,Cattle,Weanling,M,Crossbred,Raising
+S00276,4/8/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,10,Cattle,Adult,Mixed,Holstein,Slaughter
+S00277,4/8/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,8,Cattle,Adult,M,Crossbred,Slaughter
+S00278,4/8/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,15,Cattle,Weanling,M,Angus,Finishing
+S00279,4/8/25,Green Dairy,Dairy,OH,Pioneer Dealer,Dealer,OH,16,Cattle,Calf,F,Angus,Sale
+S00280,4/8/25,River Beef Ranch,Beef,IA,Central Market,Market,IL,12,Cattle,Calf,M,Holstein,Sale
+S00281,4/8/25,Prairie Feedlot,Feedlot,NE,Central Market,Market,IL,10,Cattle,Adult,Mixed,Holstein,Raising
+S00282,4/8/25,Blue Beef Ranch,Beef,WI,Central Market,Market,IL,14,Cattle,Calf,F,Holstein,Finishing
+S00283,4/9/25,Cedar Beef Ranch,Beef,MO,Metro Market,Market,MI,24,Cattle,Feeder,Mixed,Hereford,Finishing
+S00284,4/9/25,Pioneer Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,21,Cattle,Feeder,F,Crossbred,Finishing
+S00285,4/9/25,North Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,17,Cattle,Calf,Mixed,Holstein,Raising
+S00286,4/9/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,27,Cattle,Feeder,M,Angus,Finishing
+S00287,4/9/25,Valley Raiser,CalfRaiser,IN,South Dealer,Dealer,KY,20,Cattle,Weanling,M,Hereford,Sale
+S00288,4/9/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,24,Cattle,Feeder,F,Holstein,Finishing
+S00289,4/9/25,Prairie Feedlot,Feedlot,NE,Metro Market,Market,MI,28,Cattle,Feeder,F,Crossbred,Sale
+S00290,4/9/25,Green Dairy,Dairy,OH,North Dealer,Dealer,OH,10,Cattle,Calf,M,Holstein,Finishing
+S00291,4/9/25,Pioneer Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,15,Cattle,Weanling,M,Hereford,Finishing
+S00292,4/9/25,South Dealer,Dealer,KY,Metro Market,Market,MI,21,Cattle,Calf,M,Angus,Raising
+S00293,4/10/25,Vista Slaughter,Slaughter,OH,Central Market,Market,IL,14,Cattle,Calf,F,Holstein,Sale
+S00294,4/10/25,Cedar Beef Ranch,Beef,MO,Mesa Feedlot,Feedlot,KS,16,Cattle,Weanling,M,Holstein,Finishing
+S00295,4/10/25,Pioneer Dealer,Dealer,OH,Metro Market,Market,MI,18,Cattle,Weanling,M,Crossbred,Sale
+S00296,4/11/25,Metro Market,Market,MI,Mesa Feedlot,Feedlot,KS,26,Cattle,Feeder,F,Holstein,Finishing
+S00297,4/11/25,Metro Market,Market,MI,Hillside Calf Raiser,CalfRaiser,PA,24,Cattle,Feeder,F,Angus,Raising
+S00298,4/11/25,Harvest Slaughter,Slaughter,IL,North Dealer,Dealer,OH,32,Cattle,Feeder,F,Crossbred,Raising
+S00299,4/11/25,Central Market,Market,IL,Valley Raiser,CalfRaiser,IN,13,Cattle,Calf,M,Jersey,Raising
+S00300,4/11/25,Lake Dairy,Dairy,PA,Pioneer Dealer,Dealer,OH,13,Cattle,Calf,M,Angus,Raising
+S00301,4/11/25,Central Market,Market,IL,Hillside Calf Raiser,CalfRaiser,PA,23,Cattle,Feeder,M,Holstein,Raising
+S00302,4/11/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,22,Cattle,Feeder,F,Crossbred,Finishing
+S00303,4/11/25,North Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,13,Cattle,Weanling,M,Holstein,Raising
+S00304,4/11/25,Vista Slaughter,Slaughter,OH,County Market,Market,IN,11,Cattle,Adult,Mixed,Holstein,Sale
+S00305,4/12/25,Oak Dairy,Dairy,OH,Sunrise Calf Raiser,CalfRaiser,MI,3,Cattle,Calf,M,Holstein,Raising
+S00306,4/12/25,County Market,Market,IN,Mesa Feedlot,Feedlot,KS,11,Cattle,Weanling,F,Angus,Finishing
+S00307,4/12/25,Lake Dairy,Dairy,PA,County Market,Market,IN,13,Cattle,Calf,M,Jersey,Sale
+S00308,4/12/25,Central Market,Market,IL,Mesa Feedlot,Feedlot,KS,20,Cattle,Weanling,F,Holstein,Finishing
+S00309,4/12/25,South Dealer,Dealer,KY,Prairie Feedlot,Feedlot,NE,29,Cattle,Feeder,M,Angus,Finishing
+S00310,4/12/25,Green Dairy,Dairy,OH,North Dealer,Dealer,OH,10,Cattle,Calf,F,Hereford,Raising
+S00311,4/12/25,Lake Dairy,Dairy,PA,South Dealer,Dealer,KY,16,Cattle,Weanling,M,Jersey,Finishing
+S00312,4/12/25,Central Market,Market,IL,Harvest Slaughter,Slaughter,IL,4,Cattle,Adult,F,Holstein,Slaughter
+S00313,4/13/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,30,Cattle,Feeder,F,Crossbred,Finishing
+S00314,4/13/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,34,Cattle,Feeder,M,Simmental,Finishing
+S00315,4/13/25,North Dealer,Dealer,OH,Metro Market,Market,MI,10,Cattle,Weanling,F,Crossbred,Sale
+S00316,4/13/25,Oak Dairy,Dairy,OH,South Dealer,Dealer,KY,10,Cattle,Calf,M,Holstein,Sale
+S00317,4/13/25,Lake Dairy,Dairy,PA,Central Market,Market,IL,17,Cattle,Weanling,M,Simmental,Sale
+S00318,4/13/25,Central Market,Market,IL,South Dealer,Dealer,KY,11,Cattle,Adult,M,Holstein,Sale
+S00319,4/13/25,River Beef Ranch,Beef,IA,North Dealer,Dealer,OH,10,Cattle,Calf,F,Hereford,Sale
+S00320,4/14/25,River Beef Ranch,Beef,IA,Prairie Feedlot,Feedlot,NE,32,Cattle,Feeder,F,Simmental,Finishing
+S00321,4/14/25,Metro Market,Market,MI,Hillside Calf Raiser,CalfRaiser,PA,19,Cattle,Weanling,F,Holstein,Raising
+S00322,4/15/25,Lake Dairy,Dairy,PA,County Market,Market,IN,15,Cattle,Calf,Mixed,Crossbred,Finishing
+S00323,4/15/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,27,Cattle,Feeder,F,Crossbred,Finishing
+S00324,4/15/25,Lake Dairy,Dairy,PA,County Market,Market,IN,6,Cattle,Calf,Mixed,Angus,Sale
+S00325,4/15/25,Green Dairy,Dairy,OH,Pioneer Dealer,Dealer,OH,18,Cattle,Calf,F,Angus,Raising
+S00326,4/15/25,Vista Slaughter,Slaughter,OH,Pioneer Dealer,Dealer,OH,11,Cattle,Adult,F,Angus,Sale
+S00327,4/15/25,North Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,16,Cattle,Calf,F,Holstein,Raising
+S00328,4/15/25,Prairie Feedlot,Feedlot,NE,Metro Market,Market,MI,11,Cattle,Adult,F,Holstein,Raising
+S00329,4/15/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,20,Cattle,Weanling,F,Crossbred,Raising
+S00330,4/15/25,Oak Dairy,Dairy,OH,Pioneer Dealer,Dealer,OH,10,Cattle,Calf,Mixed,Holstein,Finishing
+S00331,4/15/25,County Market,Market,IN,Sunrise Calf Raiser,CalfRaiser,MI,17,Cattle,Calf,F,Crossbred,Raising
+S00332,4/15/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,7,Cattle,Adult,M,Holstein,Slaughter
+S00333,4/15/25,Pioneer Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,26,Cattle,Feeder,M,Holstein,Finishing
+S00334,4/16/25,Sunrise Calf Raiser,CalfRaiser,MI,North Dealer,Dealer,OH,13,Cattle,Weanling,F,Angus,Slaughter
+S00335,4/16/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,33,Cattle,Feeder,M,Crossbred,Finishing
+S00336,4/16/25,Prairie Feedlot,Feedlot,NE,Central Market,Market,IL,15,Cattle,Weanling,F,Angus,Sale
+S00337,4/16/25,Vista Slaughter,Slaughter,OH,Central Market,Market,IL,16,Cattle,Adult,Mixed,Crossbred,Raising
+S00338,4/16/25,Central Market,Market,IL,Prairie Feedlot,Feedlot,NE,25,Cattle,Feeder,M,Holstein,Finishing
+S00339,4/17/25,County Market,Market,IN,Hillside Calf Raiser,CalfRaiser,PA,12,Cattle,Calf,Mixed,Holstein,Raising
+S00340,4/17/25,Pioneer Dealer,Dealer,OH,Vista Slaughter,Slaughter,OH,25,Cattle,Feeder,F,Hereford,Slaughter
+S00341,4/17/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,24,Cattle,Feeder,M,Jersey,Finishing
+S00342,4/17/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,21,Cattle,Weanling,F,Holstein,Sale
+S00343,4/17/25,Oak Dairy,Dairy,OH,South Dealer,Dealer,KY,12,Cattle,Calf,M,Angus,Raising
+S00344,4/17/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,12,Cattle,Weanling,M,Hereford,Finishing
+S00345,4/17/25,South Dealer,Dealer,KY,Valley Raiser,CalfRaiser,IN,19,Cattle,Weanling,F,Crossbred,Raising
+S00346,4/18/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,26,Cattle,Feeder,M,Hereford,Finishing
+S00347,4/18/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,10,Cattle,Adult,Mixed,Holstein,Slaughter
+S00348,4/18/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,18,Cattle,Weanling,F,Crossbred,Finishing
+S00349,4/18/25,Harvest Slaughter,Slaughter,IL,North Dealer,Dealer,OH,12,Cattle,Adult,F,Holstein,Sale
+S00350,4/18/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,12,Cattle,Adult,F,Angus,Slaughter
+S00351,4/18/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,17,Cattle,Calf,M,Holstein,Sale
+S00352,4/18/25,County Market,Market,IN,South Dealer,Dealer,KY,30,Cattle,Feeder,F,Holstein,Finishing
+S00353,4/18/25,County Market,Market,IN,Mesa Feedlot,Feedlot,KS,28,Cattle,Feeder,F,Angus,Finishing
+S00354,4/18/25,County Market,Market,IN,Harvest Slaughter,Slaughter,IL,14,Cattle,Adult,Mixed,Angus,Slaughter
+S00355,4/18/25,Harvest Slaughter,Slaughter,IL,North Dealer,Dealer,OH,32,Cattle,Feeder,F,Holstein,Finishing
+S00356,4/18/25,Oak Dairy,Dairy,OH,County Market,Market,IN,7,Cattle,Calf,F,Crossbred,Sale
+S00357,4/19/25,Pioneer Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,39,Cattle,Feeder,M,Angus,Finishing
+S00358,4/19/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,14,Cattle,Calf,M,Holstein,Sale
+S00359,4/19/25,Green Dairy,Dairy,OH,County Market,Market,IN,18,Cattle,Calf,M,Crossbred,Finishing
+S00360,4/19/25,Prairie Feedlot,Feedlot,NE,Central Market,Market,IL,8,Cattle,Calf,M,Hereford,Raising
+S00361,4/19/25,Lake Dairy,Dairy,PA,Metro Market,Market,MI,19,Cattle,Weanling,M,Angus,Sale
+S00362,4/20/25,Valley Raiser,CalfRaiser,IN,South Dealer,Dealer,KY,19,Cattle,Feeder,M,Holstein,Raising
+S00363,4/20/25,Pioneer Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,6,Cattle,Adult,Mixed,Holstein,Raising
+S00364,4/20/25,South Dealer,Dealer,KY,Valley Raiser,CalfRaiser,IN,29,Cattle,Feeder,M,Angus,Raising
+S00365,4/20/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,23,Cattle,Feeder,M,Crossbred,Finishing
+S00366,4/20/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,24,Cattle,Feeder,M,Angus,Finishing
+S00367,4/20/25,Lake Dairy,Dairy,PA,North Dealer,Dealer,OH,15,Cattle,Calf,M,Holstein,Sale
+S00368,4/21/25,Mesa Feedlot,Feedlot,KS,North Dealer,Dealer,OH,8,Cattle,Adult,F,Angus,Sale
+S00369,4/21/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,8,Cattle,Adult,M,Crossbred,Slaughter
+S00370,4/21/25,South Dealer,Dealer,KY,Valley Raiser,CalfRaiser,IN,14,Cattle,Calf,M,Crossbred,Raising
+S00371,4/21/25,Metro Market,Market,MI,Sunrise Calf Raiser,CalfRaiser,MI,14,Cattle,Weanling,F,Crossbred,Raising
+S00372,4/21/25,Central Market,Market,IL,Mesa Feedlot,Feedlot,KS,18,Cattle,Weanling,M,Crossbred,Finishing
+S00373,4/22/25,Hillside Calf Raiser,CalfRaiser,PA,Pioneer Dealer,Dealer,OH,8,Cattle,Adult,M,Holstein,Sale
+S00374,4/22/25,Pioneer Dealer,Dealer,OH,Harvest Slaughter,Slaughter,IL,11,Cattle,Adult,M,Holstein,Slaughter
+S00375,4/23/25,Green Dairy,Dairy,OH,Hillside Calf Raiser,CalfRaiser,PA,11,Cattle,Calf,F,Jersey,Raising
+S00376,4/23/25,Valley Raiser,CalfRaiser,IN,North Dealer,Dealer,OH,20,Cattle,Feeder,F,Angus,Raising
+S00377,4/23/25,Sunrise Calf Raiser,CalfRaiser,MI,North Dealer,Dealer,OH,10,Cattle,Calf,F,Crossbred,Finishing
+S00378,4/23/25,Lake Dairy,Dairy,PA,South Dealer,Dealer,KY,16,Cattle,Calf,M,Holstein,Sale
+S00379,4/23/25,Green Dairy,Dairy,OH,South Dealer,Dealer,KY,11,Cattle,Calf,F,Angus,Raising
+S00380,4/23/25,Mesa Feedlot,Feedlot,KS,Central Market,Market,IL,9,Cattle,Adult,Mixed,Hereford,Slaughter
+S00381,4/23/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,20,Cattle,Feeder,F,Holstein,Slaughter
+S00382,4/24/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,16,Cattle,Calf,F,Holstein,Raising
+S00383,4/24/25,Oak Dairy,Dairy,OH,Valley Raiser,CalfRaiser,IN,16,Cattle,Calf,M,Holstein,Raising
+S00384,4/24/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,12,Cattle,Weanling,M,Crossbred,Sale
+S00385,4/24/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,23,Cattle,Feeder,M,Angus,Finishing
+S00386,4/24/25,Sunrise Calf Raiser,CalfRaiser,MI,Mesa Feedlot,Feedlot,KS,10,Cattle,Weanling,Mixed,Holstein,Finishing
+S00387,4/24/25,Valley Raiser,CalfRaiser,IN,Mesa Feedlot,Feedlot,KS,35,Cattle,Feeder,F,Hereford,Finishing
+S00388,4/24/25,County Market,Market,IN,Harvest Slaughter,Slaughter,IL,5,Cattle,Adult,F,Angus,Slaughter
+S00389,4/24/25,Hillside Calf Raiser,CalfRaiser,PA,North Dealer,Dealer,OH,14,Cattle,Calf,F,Crossbred,Raising
+S00390,4/24/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,27,Cattle,Feeder,M,Crossbred,Finishing
+S00391,4/25/25,Valley Raiser,CalfRaiser,IN,Central Market,Market,IL,30,Cattle,Feeder,F,Crossbred,Sale
+S00392,4/25/25,Mesa Feedlot,Feedlot,KS,South Dealer,Dealer,KY,12,Cattle,Weanling,M,Angus,Finishing
+S00393,4/25/25,Green Dairy,Dairy,OH,North Dealer,Dealer,OH,12,Cattle,Calf,M,Jersey,Sale
+S00394,4/25/25,County Market,Market,IN,Harvest Slaughter,Slaughter,IL,8,Cattle,Adult,Mixed,Holstein,Slaughter
+S00395,4/25/25,North Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,26,Cattle,Feeder,M,Hereford,Raising
+S00396,4/25/25,Lake Dairy,Dairy,PA,County Market,Market,IN,5,Cattle,Calf,M,Crossbred,Slaughter
+S00397,4/25/25,Green Dairy,Dairy,OH,County Market,Market,IN,16,Cattle,Weanling,M,Holstein,Sale
+S00398,4/26/25,Harvest Slaughter,Slaughter,IL,Metro Market,Market,MI,22,Cattle,Feeder,F,Holstein,Sale
+S00399,4/26/25,Oak Dairy,Dairy,OH,Pioneer Dealer,Dealer,OH,11,Cattle,Calf,M,Holstein,Raising
+S00400,4/26/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,20,Cattle,Weanling,F,Angus,Finishing
+S00401,4/26/25,County Market,Market,IN,Hillside Calf Raiser,CalfRaiser,PA,13,Cattle,Adult,F,Holstein,Raising
+S00402,4/27/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,8,Cattle,Adult,F,Holstein,Slaughter
+S00403,4/27/25,Harvest Slaughter,Slaughter,IL,Pioneer Dealer,Dealer,OH,9,Cattle,Adult,M,Holstein,Finishing
+S00404,4/27/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,22,Cattle,Feeder,M,Holstein,Finishing
+S00405,4/27/25,Blue Beef Ranch,Beef,WI,Mesa Feedlot,Feedlot,KS,15,Cattle,Weanling,F,Crossbred,Finishing
+S00406,4/27/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,23,Cattle,Feeder,F,Angus,Finishing
+S00407,4/28/25,Lake Dairy,Dairy,PA,Hillside Calf Raiser,CalfRaiser,PA,13,Cattle,Calf,M,Crossbred,Raising
+S00408,4/28/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,23,Cattle,Weanling,M,Holstein,Finishing
+S00409,4/29/25,North Dealer,Dealer,OH,Prairie Feedlot,Feedlot,NE,21,Cattle,Feeder,M,Jersey,Finishing
+S00410,4/29/25,Blue Beef Ranch,Beef,WI,County Market,Market,IN,10,Cattle,Calf,M,Hereford,Sale
+S00411,4/29/25,Lake Dairy,Dairy,PA,South Dealer,Dealer,KY,15,Cattle,Calf,F,Holstein,Finishing
+S00412,4/29/25,River Beef Ranch,Beef,IA,Mesa Feedlot,Feedlot,KS,13,Cattle,Weanling,M,Hereford,Finishing
+S00413,4/30/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,25,Cattle,Feeder,F,Hereford,Finishing
+S00414,4/30/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,22,Cattle,Feeder,M,Hereford,Finishing
+S00415,4/30/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,16,Cattle,Weanling,M,Hereford,Finishing
+S00416,4/30/25,Central Market,Market,IL,Prairie Feedlot,Feedlot,NE,27,Cattle,Feeder,M,Holstein,Finishing
+S00417,4/30/25,River Beef Ranch,Beef,IA,South Dealer,Dealer,KY,32,Cattle,Feeder,F,Angus,Raising
+S00418,4/30/25,Metro Market,Market,MI,Mesa Feedlot,Feedlot,KS,25,Cattle,Feeder,F,Holstein,Finishing
+S00419,4/30/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,17,Cattle,Weanling,M,Holstein,Finishing
+S00420,4/30/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,11,Cattle,Weanling,M,Simmental,Sale
+S00421,4/30/25,Metro Market,Market,MI,Mesa Feedlot,Feedlot,KS,19,Cattle,Feeder,F,Crossbred,Finishing
+S00422,5/1/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,23,Cattle,Feeder,F,Angus,Finishing
+S00423,5/1/25,Vista Slaughter,Slaughter,OH,Pioneer Dealer,Dealer,OH,10,Cattle,Calf,F,Hereford,Sale
+S00424,5/1/25,Vista Slaughter,Slaughter,OH,Pioneer Dealer,Dealer,OH,20,Cattle,Weanling,M,Crossbred,Finishing
+S00425,5/1/25,North Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,7,Cattle,Adult,Mixed,Angus,Raising
+S00426,5/1/25,Pioneer Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,10,Cattle,Weanling,F,Crossbred,Raising
+S00427,5/1/25,Vista Slaughter,Slaughter,OH,Metro Market,Market,MI,7,Cattle,Calf,M,Hereford,Sale
+S00428,5/1/25,Oak Dairy,Dairy,OH,South Dealer,Dealer,KY,11,Cattle,Calf,M,Simmental,Sale
+S00429,5/1/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,11,Cattle,Adult,M,Angus,Slaughter
+S00430,5/1/25,South Dealer,Dealer,KY,Prairie Feedlot,Feedlot,NE,26,Cattle,Feeder,F,Holstein,Finishing
+S00431,5/1/25,River Beef Ranch,Beef,IA,South Dealer,Dealer,KY,14,Cattle,Weanling,F,Holstein,Sale
+S00432,5/1/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,10,Cattle,Weanling,F,Angus,Sale
+S00433,5/1/25,River Beef Ranch,Beef,IA,Pioneer Dealer,Dealer,OH,16,Cattle,Feeder,M,Jersey,Sale
+S00434,5/2/25,Valley Raiser,CalfRaiser,IN,Mesa Feedlot,Feedlot,KS,24,Cattle,Feeder,M,Holstein,Finishing
+S00435,5/2/25,South Dealer,Dealer,KY,Prairie Feedlot,Feedlot,NE,24,Cattle,Feeder,M,Holstein,Finishing
+S00436,5/2/25,Cedar Beef Ranch,Beef,MO,North Dealer,Dealer,OH,17,Cattle,Calf,Mixed,Hereford,Finishing
+S00437,5/2/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,24,Cattle,Feeder,F,Holstein,Finishing
+S00438,5/2/25,Green Dairy,Dairy,OH,County Market,Market,IN,17,Cattle,Calf,M,Holstein,Sale
+S00439,5/2/25,Blue Beef Ranch,Beef,WI,Metro Market,Market,MI,25,Cattle,Feeder,M,Holstein,Finishing
+S00440,5/2/25,County Market,Market,IN,Hillside Calf Raiser,CalfRaiser,PA,17,Cattle,Weanling,M,Angus,Raising
+S00441,5/2/25,County Market,Market,IN,Hillside Calf Raiser,CalfRaiser,PA,20,Cattle,Calf,Mixed,Holstein,Raising
+S00442,5/3/25,Cedar Beef Ranch,Beef,MO,Prairie Feedlot,Feedlot,NE,24,Cattle,Feeder,M,Holstein,Finishing
+S00443,5/3/25,River Beef Ranch,Beef,IA,County Market,Market,IN,11,Cattle,Weanling,F,Angus,Finishing
+S00444,5/3/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,10,Cattle,Adult,M,Hereford,Slaughter
+S00445,5/3/25,River Beef Ranch,Beef,IA,South Dealer,Dealer,KY,28,Cattle,Weanling,F,Holstein,Sale
+S00446,5/3/25,Green Dairy,Dairy,OH,Central Market,Market,IL,13,Cattle,Calf,Mixed,Holstein,Slaughter
+S00447,5/3/25,Central Market,Market,IL,Pioneer Dealer,Dealer,OH,22,Cattle,Feeder,M,Hereford,Sale
+S00448,5/3/25,Pioneer Dealer,Dealer,OH,County Market,Market,IN,17,Cattle,Weanling,M,Holstein,Sale
+S00449,5/4/25,Oak Dairy,Dairy,OH,Sunrise Calf Raiser,CalfRaiser,MI,12,Cattle,Calf,M,Holstein,Raising
+S00450,5/4/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,7,Cattle,Adult,M,Crossbred,Slaughter
+S00451,5/4/25,South Dealer,Dealer,KY,Hillside Calf Raiser,CalfRaiser,PA,15,Cattle,Feeder,M,Angus,Raising
+S00452,5/4/25,Hillside Calf Raiser,CalfRaiser,PA,County Market,Market,IN,21,Cattle,Feeder,M,Holstein,Sale
+S00453,5/4/25,Maple Dairy,Dairy,NY,Central Market,Market,IL,12,Cattle,Weanling,M,Jersey,Raising
+S00454,5/5/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,23,Cattle,Feeder,M,Simmental,Slaughter
+S00455,5/5/25,South Dealer,Dealer,KY,Mesa Feedlot,Feedlot,KS,23,Cattle,Feeder,M,Holstein,Finishing
+S00456,5/5/25,Lake Dairy,Dairy,PA,Pioneer Dealer,Dealer,OH,18,Cattle,Weanling,M,Jersey,Sale
+S00457,5/5/25,North Dealer,Dealer,OH,Sunrise Calf Raiser,CalfRaiser,MI,11,Cattle,Calf,Mixed,Crossbred,Raising
+S00458,5/5/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,6,Cattle,Adult,Mixed,Angus,Slaughter
+S00459,5/5/25,Pioneer Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,8,Cattle,Adult,Mixed,Holstein,Raising
+S00460,5/5/25,Harvest Slaughter,Slaughter,IL,County Market,Market,IN,6,Cattle,Adult,F,Angus,Sale
+S00461,5/5/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,9,Cattle,Adult,Mixed,Holstein,Slaughter
+S00462,5/5/25,Vista Slaughter,Slaughter,OH,South Dealer,Dealer,KY,11,Cattle,Adult,F,Angus,Sale
+S00463,5/5/25,Pioneer Dealer,Dealer,OH,County Market,Market,IN,22,Cattle,Weanling,M,Holstein,Sale
+S00464,5/5/25,Metro Market,Market,MI,Valley Raiser,CalfRaiser,IN,13,Cattle,Calf,F,Angus,Raising
+S00465,5/5/25,Lake Dairy,Dairy,PA,County Market,Market,IN,18,Cattle,Calf,M,Crossbred,Sale
+S00466,5/5/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,31,Cattle,Feeder,F,Jersey,Finishing
+S00467,5/6/25,Harvest Slaughter,Slaughter,IL,North Dealer,Dealer,OH,20,Cattle,Feeder,M,Holstein,Sale
+S00468,5/6/25,South Dealer,Dealer,KY,Mesa Feedlot,Feedlot,KS,18,Cattle,Weanling,F,Jersey,Finishing
+S00469,5/6/25,South Dealer,Dealer,KY,Metro Market,Market,MI,27,Cattle,Feeder,F,Crossbred,Finishing
+S00470,5/6/25,Sunrise Calf Raiser,CalfRaiser,MI,Mesa Feedlot,Feedlot,KS,19,Cattle,Weanling,M,Hereford,Finishing
+S00471,5/6/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,8,Cattle,Calf,Mixed,Holstein,Sale
+S00472,5/7/25,Vista Slaughter,Slaughter,OH,Metro Market,Market,MI,17,Cattle,Weanling,M,Holstein,Sale
+S00473,5/7/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,22,Cattle,Feeder,M,Holstein,Finishing
+S00474,5/7/25,North Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,24,Cattle,Feeder,F,Crossbred,Finishing
+S00475,5/7/25,Pioneer Dealer,Dealer,OH,County Market,Market,IN,18,Cattle,Weanling,F,Jersey,Sale
+S00476,5/7/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,17,Cattle,Weanling,M,Jersey,Finishing
+S00477,5/7/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,7,Cattle,Adult,M,Holstein,Slaughter
+S00478,5/7/25,Cedar Beef Ranch,Beef,MO,South Dealer,Dealer,KY,13,Cattle,Adult,Mixed,Hereford,Sale
+S00479,5/7/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,14,Cattle,Weanling,Mixed,Holstein,Sale
+S00480,5/7/25,Oak Dairy,Dairy,OH,South Dealer,Dealer,KY,18,Cattle,Weanling,M,Angus,Sale
+S00481,5/8/25,Pioneer Dealer,Dealer,OH,Metro Market,Market,MI,4,Cattle,Adult,Mixed,Angus,Sale
+S00482,5/8/25,Lake Dairy,Dairy,PA,Pioneer Dealer,Dealer,OH,12,Cattle,Calf,M,Angus,Sale
+S00483,5/8/25,Lake Dairy,Dairy,PA,Valley Raiser,CalfRaiser,IN,7,Cattle,Calf,F,Angus,Raising
+S00484,5/8/25,South Dealer,Dealer,KY,Hillside Calf Raiser,CalfRaiser,PA,17,Cattle,Calf,M,Holstein,Raising
+S00485,5/8/25,Lake Dairy,Dairy,PA,South Dealer,Dealer,KY,18,Cattle,Weanling,M,Crossbred,Sale
+S00486,5/8/25,Pioneer Dealer,Dealer,OH,County Market,Market,IN,15,Cattle,Feeder,M,Holstein,Sale
+S00487,5/8/25,River Beef Ranch,Beef,IA,Mesa Feedlot,Feedlot,KS,30,Cattle,Feeder,M,Holstein,Finishing
+S00488,5/8/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,25,Cattle,Feeder,M,Holstein,Finishing
+S00489,5/8/25,Lake Dairy,Dairy,PA,Pioneer Dealer,Dealer,OH,15,Cattle,Calf,M,Simmental,Sale
+S00490,5/8/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,13,Cattle,Weanling,M,Angus,Raising
+S00491,5/8/25,Lake Dairy,Dairy,PA,Metro Market,Market,MI,21,Cattle,Weanling,F,Holstein,Sale
+S00492,5/8/25,Harvest Slaughter,Slaughter,IL,North Dealer,Dealer,OH,30,Cattle,Feeder,M,Simmental,Finishing
+S00493,5/8/25,Sunrise Calf Raiser,CalfRaiser,MI,Pioneer Dealer,Dealer,OH,13,Cattle,Calf,M,Simmental,Sale
+S00494,5/9/25,Lake Dairy,Dairy,PA,Sunrise Calf Raiser,CalfRaiser,MI,14,Cattle,Calf,M,Jersey,Raising
+S00495,5/9/25,Central Market,Market,IL,Hillside Calf Raiser,CalfRaiser,PA,8,Cattle,Adult,M,Holstein,Raising
+S00496,5/9/25,Metro Market,Market,MI,Mesa Feedlot,Feedlot,KS,26,Cattle,Feeder,Mixed,Crossbred,Finishing
+S00497,5/9/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,10,Cattle,Adult,F,Angus,Sale
+S00498,5/9/25,Prairie Feedlot,Feedlot,NE,Central Market,Market,IL,30,Cattle,Feeder,F,Holstein,Raising
+S00499,5/9/25,Valley Raiser,CalfRaiser,IN,Mesa Feedlot,Feedlot,KS,26,Cattle,Feeder,M,Angus,Finishing
+S00500,5/9/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,28,Cattle,Feeder,M,Crossbred,Finishing
+S00501,5/9/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,27,Cattle,Feeder,Mixed,Hereford,Finishing
+S00502,5/9/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,27,Cattle,Feeder,M,Simmental,Finishing
+S00503,5/9/25,Oak Dairy,Dairy,OH,Central Market,Market,IL,19,Cattle,Calf,M,Crossbred,Raising
+S00504,5/9/25,Green Dairy,Dairy,OH,North Dealer,Dealer,OH,13,Cattle,Calf,M,Angus,Sale
+S00505,5/9/25,Maple Dairy,Dairy,NY,Central Market,Market,IL,14,Cattle,Calf,F,Angus,Sale
+S00506,5/9/25,Pioneer Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,5,Cattle,Adult,F,Holstein,Raising
+S00507,5/9/25,Cedar Beef Ranch,Beef,MO,Pioneer Dealer,Dealer,OH,8,Cattle,Calf,F,Crossbred,Sale
+S00508,5/9/25,South Dealer,Dealer,KY,Sunrise Calf Raiser,CalfRaiser,MI,13,Cattle,Calf,M,Holstein,Raising
+S00509,5/9/25,Vista Slaughter,Slaughter,OH,County Market,Market,IN,10,Cattle,Weanling,M,Angus,Sale
+S00510,5/9/25,Lake Dairy,Dairy,PA,South Dealer,Dealer,KY,13,Cattle,Calf,F,Holstein,Sale
+S00511,5/10/25,Blue Beef Ranch,Beef,WI,Metro Market,Market,MI,4,Cattle,Adult,M,Angus,Sale
+S00512,5/10/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,7,Cattle,Adult,F,Holstein,Slaughter
+S00513,5/10/25,Cedar Beef Ranch,Beef,MO,Metro Market,Market,MI,25,Cattle,Weanling,M,Crossbred,Sale
+S00514,5/10/25,Blue Beef Ranch,Beef,WI,Metro Market,Market,MI,6,Cattle,Adult,F,Holstein,Sale
+S00515,5/10/25,County Market,Market,IN,Hillside Calf Raiser,CalfRaiser,PA,11,Cattle,Weanling,F,Crossbred,Raising
+S00516,5/10/25,Valley Raiser,CalfRaiser,IN,Mesa Feedlot,Feedlot,KS,27,Cattle,Feeder,F,Holstein,Finishing
+S00517,5/10/25,River Beef Ranch,Beef,IA,Mesa Feedlot,Feedlot,KS,14,Cattle,Weanling,F,Angus,Finishing
+S00518,5/10/25,Central Market,Market,IL,Sunrise Calf Raiser,CalfRaiser,MI,10,Cattle,Adult,M,Holstein,Raising
+S00519,5/10/25,Vista Slaughter,Slaughter,OH,North Dealer,Dealer,OH,17,Cattle,Weanling,F,Angus,Slaughter
+S00520,5/11/25,Cedar Beef Ranch,Beef,MO,Metro Market,Market,MI,27,Cattle,Feeder,M,Hereford,Slaughter
+S00521,5/11/25,Cedar Beef Ranch,Beef,MO,Metro Market,Market,MI,11,Cattle,Weanling,M,Holstein,Sale
+S00522,5/11/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,8,Cattle,Adult,F,Hereford,Sale
+S00523,5/11/25,Metro Market,Market,MI,Sunrise Calf Raiser,CalfRaiser,MI,8,Cattle,Calf,F,Angus,Raising
+S00524,5/12/25,South Dealer,Dealer,KY,County Market,Market,IN,10,Cattle,Adult,M,Crossbred,Sale
+S00525,5/12/25,Cedar Beef Ranch,Beef,MO,Prairie Feedlot,Feedlot,NE,31,Cattle,Feeder,M,Angus,Finishing
+S00526,5/12/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,36,Cattle,Feeder,M,Angus,Finishing
+S00527,5/12/25,Pioneer Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,24,Cattle,Feeder,M,Hereford,Finishing
+S00528,5/12/25,South Dealer,Dealer,KY,Prairie Feedlot,Feedlot,NE,21,Cattle,Weanling,M,Holstein,Finishing
+S00529,5/12/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,29,Cattle,Feeder,M,Holstein,Finishing
+S00530,5/13/25,Pioneer Dealer,Dealer,OH,Central Market,Market,IL,13,Cattle,Weanling,F,Angus,Sale
+S00531,5/13/25,Maple Dairy,Dairy,NY,South Dealer,Dealer,KY,22,Cattle,Calf,F,Holstein,Raising
+S00532,5/13/25,North Dealer,Dealer,OH,Harvest Slaughter,Slaughter,IL,10,Cattle,Adult,M,Jersey,Slaughter
+S00533,5/14/25,Maple Dairy,Dairy,NY,South Dealer,Dealer,KY,20,Cattle,Weanling,M,Holstein,Sale
+S00534,5/14/25,Harvest Slaughter,Slaughter,IL,Pioneer Dealer,Dealer,OH,7,Cattle,Calf,Mixed,Angus,Finishing
+S00535,5/14/25,Harvest Slaughter,Slaughter,IL,Pioneer Dealer,Dealer,OH,12,Cattle,Weanling,M,Crossbred,Sale
+S00536,5/14/25,Cedar Beef Ranch,Beef,MO,Pioneer Dealer,Dealer,OH,11,Cattle,Calf,F,Jersey,Sale
+S00537,5/14/25,Central Market,Market,IL,Mesa Feedlot,Feedlot,KS,16,Cattle,Feeder,M,Holstein,Finishing
+S00538,5/14/25,County Market,Market,IN,Vista Slaughter,Slaughter,OH,12,Cattle,Adult,Mixed,Angus,Slaughter
+S00539,5/14/25,Harvest Slaughter,Slaughter,IL,Metro Market,Market,MI,23,Cattle,Weanling,M,Angus,Raising
+S00540,5/14/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,21,Cattle,Weanling,F,Holstein,Sale
+S00541,5/15/25,Maple Dairy,Dairy,NY,Metro Market,Market,MI,13,Cattle,Weanling,F,Hereford,Finishing
+S00542,5/15/25,Metro Market,Market,MI,Vista Slaughter,Slaughter,OH,6,Cattle,Adult,M,Crossbred,Slaughter
+S00543,5/15/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,10,Cattle,Adult,M,Angus,Slaughter
+S00544,5/15/25,Oak Dairy,Dairy,OH,Sunrise Calf Raiser,CalfRaiser,MI,12,Cattle,Calf,M,Angus,Raising
+S00545,5/15/25,Cedar Beef Ranch,Beef,MO,Pioneer Dealer,Dealer,OH,18,Cattle,Feeder,M,Holstein,Sale
+S00546,5/15/25,Maple Dairy,Dairy,NY,South Dealer,Dealer,KY,11,Cattle,Weanling,F,Angus,Sale
+S00547,5/15/25,Lake Dairy,Dairy,PA,Hillside Calf Raiser,CalfRaiser,PA,12,Cattle,Calf,M,Angus,Raising
+S00548,5/15/25,Harvest Slaughter,Slaughter,IL,County Market,Market,IN,16,Cattle,Calf,Mixed,Holstein,Finishing
+S00549,5/15/25,Lake Dairy,Dairy,PA,North Dealer,Dealer,OH,18,Cattle,Calf,M,Holstein,Slaughter
+S00550,5/16/25,Harvest Slaughter,Slaughter,IL,Pioneer Dealer,Dealer,OH,13,Cattle,Calf,M,Holstein,Sale
+S00551,5/16/25,Blue Beef Ranch,Beef,WI,County Market,Market,IN,7,Cattle,Calf,Mixed,Angus,Sale
+S00552,5/16/25,Hillside Calf Raiser,CalfRaiser,PA,Metro Market,Market,MI,29,Cattle,Feeder,M,Crossbred,Slaughter
+S00553,5/16/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,25,Cattle,Feeder,Mixed,Crossbred,Sale
+S00554,5/16/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,16,Cattle,Weanling,M,Simmental,Finishing
+S00555,5/16/25,County Market,Market,IN,Mesa Feedlot,Feedlot,KS,30,Cattle,Feeder,M,Holstein,Finishing
+S00556,5/16/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,26,Cattle,Feeder,M,Crossbred,Sale
+S00557,5/16/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,13,Cattle,Weanling,F,Angus,Sale
+S00558,5/16/25,South Dealer,Dealer,KY,Vista Slaughter,Slaughter,OH,10,Cattle,Adult,Mixed,Holstein,Slaughter
+S00559,5/16/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,27,Cattle,Feeder,F,Crossbred,Sale
+S00560,5/16/25,Valley Raiser,CalfRaiser,IN,Mesa Feedlot,Feedlot,KS,12,Cattle,Weanling,M,Holstein,Finishing
+S00561,5/16/25,Valley Raiser,CalfRaiser,IN,South Dealer,Dealer,KY,24,Cattle,Feeder,M,Angus,Sale
+S00562,5/16/25,Mesa Feedlot,Feedlot,KS,County Market,Market,IN,19,Cattle,Weanling,F,Angus,Raising
+S00563,5/17/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,17,Cattle,Weanling,M,Crossbred,Finishing
+S00564,5/17/25,Central Market,Market,IL,North Dealer,Dealer,OH,15,Cattle,Weanling,Mixed,Hereford,Sale
+S00565,5/18/25,Oak Dairy,Dairy,OH,North Dealer,Dealer,OH,10,Cattle,Calf,F,Holstein,Sale
+S00566,5/18/25,River Beef Ranch,Beef,IA,North Dealer,Dealer,OH,9,Cattle,Adult,Mixed,Holstein,Raising
+S00567,5/18/25,Hillside Calf Raiser,CalfRaiser,PA,South Dealer,Dealer,KY,11,Cattle,Calf,F,Holstein,Finishing
+S00568,5/19/25,County Market,Market,IN,Prairie Feedlot,Feedlot,NE,15,Cattle,Feeder,M,Holstein,Finishing
+S00569,5/19/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,11,Cattle,Calf,M,Holstein,Finishing
+S00570,5/19/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,11,Cattle,Calf,M,Crossbred,Raising
+S00571,5/19/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,17,Cattle,Calf,F,Angus,Sale
+S00572,5/19/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,16,Cattle,Weanling,M,Angus,Slaughter
+S00573,5/19/25,North Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,7,Cattle,Adult,Mixed,Crossbred,Raising
+S00574,5/19/25,Prairie Feedlot,Feedlot,NE,Vista Slaughter,Slaughter,OH,19,Cattle,Feeder,M,Holstein,Slaughter
+S00575,5/19/25,Central Market,Market,IL,Valley Raiser,CalfRaiser,IN,15,Cattle,Weanling,Mixed,Angus,Raising
+S00576,5/19/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,35,Cattle,Feeder,M,Angus,Finishing
+S00577,5/20/25,Oak Dairy,Dairy,OH,County Market,Market,IN,22,Cattle,Weanling,M,Angus,Finishing
+S00578,5/20/25,River Beef Ranch,Beef,IA,Central Market,Market,IL,17,Cattle,Adult,F,Hereford,Sale
+S00579,5/20/25,Prairie Feedlot,Feedlot,NE,North Dealer,Dealer,OH,25,Cattle,Feeder,M,Hereford,Finishing
+S00580,5/20/25,Lake Dairy,Dairy,PA,South Dealer,Dealer,KY,10,Cattle,Calf,M,Holstein,Finishing
+S00581,5/20/25,Pioneer Dealer,Dealer,OH,Mesa Feedlot,Feedlot,KS,25,Cattle,Feeder,M,Holstein,Finishing
+S00582,5/20/25,Green Dairy,Dairy,OH,Valley Raiser,CalfRaiser,IN,9,Cattle,Calf,M,Holstein,Raising
+S00583,5/20/25,Blue Beef Ranch,Beef,WI,Metro Market,Market,MI,7,Cattle,Adult,Mixed,Simmental,Sale
+S00584,5/20/25,Blue Beef Ranch,Beef,WI,North Dealer,Dealer,OH,8,Cattle,Adult,Mixed,Simmental,Raising
+S00585,5/21/25,North Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,9,Cattle,Calf,M,Holstein,Raising
+S00586,5/21/25,Valley Raiser,CalfRaiser,IN,Mesa Feedlot,Feedlot,KS,21,Cattle,Feeder,F,Angus,Finishing
+S00587,5/21/25,Central Market,Market,IL,Vista Slaughter,Slaughter,OH,28,Cattle,Feeder,M,Hereford,Slaughter
+S00588,5/21/25,Maple Dairy,Dairy,NY,Central Market,Market,IL,14,Cattle,Weanling,M,Simmental,Sale
+S00589,5/21/25,Valley Raiser,CalfRaiser,IN,County Market,Market,IN,15,Cattle,Weanling,F,Holstein,Finishing
+S00590,5/21/25,Green Dairy,Dairy,OH,South Dealer,Dealer,KY,10,Cattle,Calf,F,Holstein,Sale
+S00591,5/21/25,Green Dairy,Dairy,OH,County Market,Market,IN,17,Cattle,Calf,F,Angus,Sale
+S00592,5/21/25,Cedar Beef Ranch,Beef,MO,South Dealer,Dealer,KY,19,Cattle,Feeder,M,Holstein,Sale
+S00593,5/22/25,Metro Market,Market,MI,Harvest Slaughter,Slaughter,IL,10,Cattle,Adult,Mixed,Jersey,Slaughter
+S00594,5/22/25,Sunrise Calf Raiser,CalfRaiser,MI,Mesa Feedlot,Feedlot,KS,21,Cattle,Weanling,M,Holstein,Finishing
+S00595,5/22/25,Vista Slaughter,Slaughter,OH,North Dealer,Dealer,OH,11,Cattle,Calf,F,Hereford,Sale
+S00596,5/22/25,Cedar Beef Ranch,Beef,MO,County Market,Market,IN,17,Cattle,Calf,F,Angus,Sale
+S00597,5/22/25,North Dealer,Dealer,OH,County Market,Market,IN,9,Cattle,Calf,F,Holstein,Sale
+S00598,5/22/25,Oak Dairy,Dairy,OH,County Market,Market,IN,11,Cattle,Calf,F,Angus,Sale
+S00599,5/22/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,13,Cattle,Weanling,M,Angus,Finishing
+S00600,5/22/25,Maple Dairy,Dairy,NY,County Market,Market,IN,18,Cattle,Calf,M,Holstein,Sale
+S00601,5/22/25,Vista Slaughter,Slaughter,OH,County Market,Market,IN,27,Cattle,Feeder,M,Crossbred,Sale
+S00602,5/22/25,Vista Slaughter,Slaughter,OH,Metro Market,Market,MI,8,Cattle,Adult,Mixed,Crossbred,Sale
+S00603,5/22/25,Green Dairy,Dairy,OH,Pioneer Dealer,Dealer,OH,20,Cattle,Weanling,M,Jersey,Sale
+S00604,5/23/25,Mesa Feedlot,Feedlot,KS,Vista Slaughter,Slaughter,OH,3,Cattle,Adult,F,Angus,Slaughter
+S00605,5/23/25,Pioneer Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,19,Cattle,Weanling,M,Crossbred,Raising
+S00606,5/23/25,Prairie Feedlot,Feedlot,NE,Central Market,Market,IL,12,Cattle,Adult,M,Hereford,Sale
+S00607,5/23/25,County Market,Market,IN,Vista Slaughter,Slaughter,OH,13,Cattle,Adult,Mixed,Angus,Slaughter
+S00608,5/23/25,Oak Dairy,Dairy,OH,Central Market,Market,IL,8,Cattle,Calf,M,Hereford,Sale
+S00609,5/23/25,Lake Dairy,Dairy,PA,Valley Raiser,CalfRaiser,IN,9,Cattle,Calf,Mixed,Crossbred,Raising
+S00610,5/23/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,28,Cattle,Feeder,F,Holstein,Finishing
+S00611,5/23/25,Metro Market,Market,MI,Vista Slaughter,Slaughter,OH,28,Cattle,Feeder,F,Crossbred,Slaughter
+S00612,5/23/25,Valley Raiser,CalfRaiser,IN,Prairie Feedlot,Feedlot,NE,33,Cattle,Feeder,M,Holstein,Finishing
+S00613,5/23/25,County Market,Market,IN,Harvest Slaughter,Slaughter,IL,8,Cattle,Adult,Mixed,Simmental,Slaughter
+S00614,5/23/25,Metro Market,Market,MI,Valley Raiser,CalfRaiser,IN,21,Cattle,Weanling,Mixed,Hereford,Raising
+S00615,5/24/25,Green Dairy,Dairy,OH,County Market,Market,IN,11,Cattle,Calf,F,Holstein,Sale
+S00616,5/24/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,24,Cattle,Weanling,F,Angus,Finishing
+S00617,5/24/25,South Dealer,Dealer,KY,Vista Slaughter,Slaughter,OH,7,Cattle,Adult,M,Angus,Slaughter
+S00618,5/24/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,12,Cattle,Adult,Mixed,Holstein,Slaughter
+S00619,5/24/25,River Beef Ranch,Beef,IA,Central Market,Market,IL,9,Cattle,Weanling,M,Crossbred,Finishing
+S00620,5/24/25,Harvest Slaughter,Slaughter,IL,County Market,Market,IN,21,Cattle,Feeder,F,Angus,Raising
+S00621,5/25/25,Vista Slaughter,Slaughter,OH,South Dealer,Dealer,KY,9,Cattle,Adult,Mixed,Holstein,Finishing
+S00622,5/25/25,Maple Dairy,Dairy,NY,County Market,Market,IN,12,Cattle,Calf,F,Crossbred,Sale
+S00623,5/25/25,Lake Dairy,Dairy,PA,Central Market,Market,IL,23,Cattle,Weanling,Mixed,Angus,Sale
+S00624,5/26/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,8,Cattle,Adult,F,Holstein,Raising
+S00625,5/26/25,North Dealer,Dealer,OH,County Market,Market,IN,16,Cattle,Calf,F,Holstein,Raising
+S00626,5/26/25,Oak Dairy,Dairy,OH,South Dealer,Dealer,KY,14,Cattle,Weanling,M,Jersey,Sale
+S00627,5/26/25,Valley Raiser,CalfRaiser,IN,South Dealer,Dealer,KY,7,Cattle,Adult,M,Jersey,Sale
+S00628,5/26/25,River Beef Ranch,Beef,IA,County Market,Market,IN,5,Cattle,Adult,Mixed,Crossbred,Raising
+S00629,5/26/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,20,Cattle,Feeder,M,Crossbred,Finishing
+S00630,5/26/25,Hillside Calf Raiser,CalfRaiser,PA,Mesa Feedlot,Feedlot,KS,15,Cattle,Weanling,F,Crossbred,Finishing
+S00631,5/26/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,11,Cattle,Adult,M,Holstein,Slaughter
+S00632,5/26/25,Maple Dairy,Dairy,NY,South Dealer,Dealer,KY,15,Cattle,Calf,F,Holstein,Sale
+S00633,5/26/25,Cedar Beef Ranch,Beef,MO,North Dealer,Dealer,OH,18,Cattle,Calf,M,Holstein,Sale
+S00634,5/27/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,7,Cattle,Adult,M,Hereford,Slaughter
+S00635,5/27/25,River Beef Ranch,Beef,IA,County Market,Market,IN,18,Cattle,Weanling,Mixed,Holstein,Slaughter
+S00636,5/27/25,Mesa Feedlot,Feedlot,KS,Harvest Slaughter,Slaughter,IL,33,Cattle,Feeder,M,Crossbred,Slaughter
+S00637,5/27/25,Harvest Slaughter,Slaughter,IL,Metro Market,Market,MI,23,Cattle,Feeder,M,Angus,Sale
+S00638,5/27/25,Oak Dairy,Dairy,OH,Central Market,Market,IL,9,Cattle,Calf,M,Holstein,Raising
+S00639,5/27/25,Oak Dairy,Dairy,OH,Metro Market,Market,MI,12,Cattle,Calf,F,Holstein,Slaughter
+S00640,5/27/25,Lake Dairy,Dairy,PA,Sunrise Calf Raiser,CalfRaiser,MI,13,Cattle,Calf,M,Crossbred,Raising
+S00641,5/28/25,Metro Market,Market,MI,Sunrise Calf Raiser,CalfRaiser,MI,16,Cattle,Weanling,M,Jersey,Raising
+S00642,5/28/25,Central Market,Market,IL,North Dealer,Dealer,OH,10,Cattle,Weanling,F,Angus,Finishing
+S00643,5/28/25,Lake Dairy,Dairy,PA,North Dealer,Dealer,OH,14,Cattle,Calf,M,Angus,Finishing
+S00644,5/28/25,Maple Dairy,Dairy,NY,North Dealer,Dealer,OH,17,Cattle,Weanling,F,Holstein,Sale
+S00645,5/28/25,County Market,Market,IN,Harvest Slaughter,Slaughter,IL,10,Cattle,Adult,Mixed,Holstein,Slaughter
+S00646,5/28/25,Hillside Calf Raiser,CalfRaiser,PA,Prairie Feedlot,Feedlot,NE,26,Cattle,Feeder,M,Angus,Finishing
+S00647,5/28/25,River Beef Ranch,Beef,IA,North Dealer,Dealer,OH,11,Cattle,Adult,M,Hereford,Raising
+S00648,5/28/25,Metro Market,Market,MI,Hillside Calf Raiser,CalfRaiser,PA,7,Cattle,Adult,M,Crossbred,Raising
+S00649,5/28/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,22,Cattle,Feeder,M,Holstein,Finishing
+S00650,5/28/25,Lake Dairy,Dairy,PA,Metro Market,Market,MI,10,Cattle,Calf,F,Crossbred,Sale
+S00651,5/28/25,Vista Slaughter,Slaughter,OH,North Dealer,Dealer,OH,15,Cattle,Weanling,M,Simmental,Sale
+S00652,5/28/25,Green Dairy,Dairy,OH,South Dealer,Dealer,KY,16,Cattle,Calf,M,Simmental,Finishing
+S00653,5/28/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,13,Cattle,Calf,M,Crossbred,Raising
+S00654,5/29/25,North Dealer,Dealer,OH,Hillside Calf Raiser,CalfRaiser,PA,27,Cattle,Feeder,M,Crossbred,Raising
+S00655,5/29/25,Harvest Slaughter,Slaughter,IL,County Market,Market,IN,15,Cattle,Weanling,F,Angus,Finishing
+S00656,5/29/25,Prairie Feedlot,Feedlot,NE,Harvest Slaughter,Slaughter,IL,10,Cattle,Adult,M,Holstein,Slaughter
+S00657,5/29/25,Metro Market,Market,MI,Valley Raiser,CalfRaiser,IN,25,Cattle,Feeder,Mixed,Crossbred,Raising
+S00658,5/29/25,Blue Beef Ranch,Beef,WI,Metro Market,Market,MI,22,Cattle,Weanling,M,Angus,Sale
+S00659,5/29/25,Lake Dairy,Dairy,PA,Metro Market,Market,MI,16,Cattle,Calf,M,Crossbred,Sale
+S00660,5/29/25,Central Market,Market,IL,Valley Raiser,CalfRaiser,IN,16,Cattle,Calf,F,Holstein,Raising
+S00661,5/29/25,Central Market,Market,IL,Sunrise Calf Raiser,CalfRaiser,MI,10,Cattle,Adult,Mixed,Holstein,Raising
+S00662,5/29/25,South Dealer,Dealer,KY,Central Market,Market,IL,14,Cattle,Weanling,M,Hereford,Sale
+S00663,5/29/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,16,Cattle,Weanling,F,Angus,Sale
+S00664,5/29/25,Harvest Slaughter,Slaughter,IL,Central Market,Market,IL,28,Cattle,Feeder,F,Simmental,Raising
+S00665,5/30/25,County Market,Market,IN,Valley Raiser,CalfRaiser,IN,20,Cattle,Feeder,M,Crossbred,Raising
+S00666,5/30/25,County Market,Market,IN,Sunrise Calf Raiser,CalfRaiser,MI,22,Cattle,Calf,M,Holstein,Raising
+S00667,5/30/25,Mesa Feedlot,Feedlot,KS,County Market,Market,IN,11,Cattle,Calf,M,Holstein,Finishing
+S00668,5/30/25,County Market,Market,IN,Valley Raiser,CalfRaiser,IN,13,Cattle,Calf,F,Crossbred,Raising
+S00669,5/30/25,Metro Market,Market,MI,Vista Slaughter,Slaughter,OH,22,Cattle,Feeder,F,Holstein,Slaughter
+S00670,5/30/25,Blue Beef Ranch,Beef,WI,South Dealer,Dealer,KY,15,Cattle,Calf,M,Angus,Finishing
+S00671,5/30/25,Pioneer Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,35,Cattle,Feeder,M,Holstein,Raising
+S00672,5/30/25,Metro Market,Market,MI,Prairie Feedlot,Feedlot,NE,25,Cattle,Feeder,M,Crossbred,Finishing
+S00673,5/30/25,Metro Market,Market,MI,Harvest Slaughter,Slaughter,IL,7,Cattle,Adult,F,Angus,Slaughter
+S00674,5/30/25,Lake Dairy,Dairy,PA,Pioneer Dealer,Dealer,OH,19,Cattle,Weanling,M,Crossbred,Slaughter
+S00675,5/30/25,South Dealer,Dealer,KY,Valley Raiser,CalfRaiser,IN,17,Cattle,Weanling,F,Holstein,Raising
+S00676,5/30/25,Maple Dairy,Dairy,NY,Valley Raiser,CalfRaiser,IN,15,Cattle,Calf,F,Angus,Raising
+S00677,5/30/25,County Market,Market,IN,Sunrise Calf Raiser,CalfRaiser,MI,11,Cattle,Adult,Mixed,Angus,Raising
+S00678,5/30/25,Maple Dairy,Dairy,NY,Central Market,Market,IL,12,Cattle,Calf,M,Crossbred,Raising
+S00679,5/30/25,Pioneer Dealer,Dealer,OH,Valley Raiser,CalfRaiser,IN,22,Cattle,Weanling,F,Jersey,Raising
+S00680,5/30/25,Valley Raiser,CalfRaiser,IN,County Market,Market,IN,13,Cattle,Calf,M,Angus,Finishing
+S00681,5/31/25,Sunrise Calf Raiser,CalfRaiser,MI,Prairie Feedlot,Feedlot,NE,30,Cattle,Feeder,Mixed,Holstein,Finishing
+S00682,5/31/25,Lake Dairy,Dairy,PA,Pioneer Dealer,Dealer,OH,16,Cattle,Calf,F,Angus,Finishing
+S00683,5/31/25,County Market,Market,IN,Harvest Slaughter,Slaughter,IL,25,Cattle,Feeder,M,Angus,Slaughter
+S00684,5/31/25,Metro Market,Market,MI,Mesa Feedlot,Feedlot,KS,17,Cattle,Weanling,M,Angus,Finishing
+S00685,5/31/25,Maple Dairy,Dairy,NY,Pioneer Dealer,Dealer,OH,12,Cattle,Calf,M,Angus,Sale

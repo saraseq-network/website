@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-57476271c5f0467c372e20ff5d25630e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7303bf19f3b2e039e0affe21418b1154.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dd22361eb0a00faaf46e9ac2450f3ce0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +69,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/research.css">
 </head>
 
 <body class="nav-fixed">
@@ -98,6 +99,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./research.html"> 
 <span class="menu-text">My Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./outreach.html"> 
+<span class="menu-text">Outreach</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -154,8 +159,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quick-facts" id="toc-quick-facts" class="nav-link active" data-scroll-target="#quick-facts"><span class="header-section-number">1</span> Quick Facts</a></li>
-  <li><a href="#beyond-the-lab" id="toc-beyond-the-lab" class="nav-link" data-scroll-target="#beyond-the-lab"><span class="header-section-number">2</span> Beyond the lab</a></li>
+  <li><a href="#quick-facts" id="toc-quick-facts" class="nav-link active" data-scroll-target="#quick-facts">Quick Facts</a></li>
+  <li><a href="#beyond-the-lab" id="toc-beyond-the-lab" class="nav-link" data-scroll-target="#beyond-the-lab">Beyond the lab</a></li>
+  <li><a href="#curriculum-vitae" id="toc-curriculum-vitae" class="nav-link" data-scroll-target="#curriculum-vitae">Curriculum Vitae</a></li>
   </ul>
 </nav>
     </div>
@@ -170,19 +176,22 @@ ul.task-list li input[type="checkbox"] {
 <p>Born in Portugal but with a spirit that never settled, I’ve always been drawn to the connections between science, animals, and the world around us. What began as a love for veterinary medicine quickly grew into a broader goal: understanding how populations move, how diseases spread, and how everything connects in an increasingly globalized world.</p>
 <p>Since discovering epidemiology, I’ve been chasing questions that move populations — particularly animals but not only. In an era where disease travels faster than ever, population medicine and spatial epidemiology are not just fields of study; they are ongoing challenges across borders, species, and ecosystems.</p>
 <p><strong>Connecting the dots</strong> — between species, spaces, and people — is at the core of what I do.</p>
-<hr>
-<section id="quick-facts" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="quick-facts"><span class="header-section-number">1</span> Quick Facts</h2>
+<section id="quick-facts" class="level2">
+<h2 class="anchored" data-anchor-id="quick-facts">Quick Facts</h2>
 <ul>
 <li>PhD Candidate in Veterinary Epidemiology</li>
 <li>Focused on spatial epidemiology, movement networks, and disease transmission</li>
 <li>Passionate about science communication, travel, and global health</li>
 </ul>
-<hr>
 </section>
-<section id="beyond-the-lab" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="beyond-the-lab"><span class="header-section-number">2</span> Beyond the lab</h2>
+<section id="beyond-the-lab" class="level2">
+<h2 class="anchored" data-anchor-id="beyond-the-lab">Beyond the lab</h2>
 <p>If I’m not debugging a model, I’m probably behind a camera, petting a dog, hunting good coffee, or outside running/hiking. I love cities with ocean light and neighborhoods with great markets.</p>
+</section>
+<section id="curriculum-vitae" class="level2">
+<h2 class="anchored" data-anchor-id="curriculum-vitae">Curriculum Vitae</h2>
+<iframe src="files/SequeiraS_CV.pdf" width="100%" height="800px" style="border: none;">
+</iframe>
 
 
 </section>
@@ -278,7 +287,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/saraseq-network\.com");
+      var filterRegex = new RegExp("https:\/\/saraseq-network\.quarto\.pub\/website");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
