@@ -22,9 +22,9 @@ Animal movement connects premises (farms, markets, dealers, raisers, slaughter p
 
 -   Build and visualize networks of animal movements.
 
--   Compute core metrics (in/out-degree, strength, betweenness, components).
-
 -   Visualize networks and annotate nodes by type (state, breed, sex, etc).
+
+-   Compute core metrics (in/out-degree, strength, betweenness, components).
 
 -   "Slice" networks over time to see how structure changes.
 
@@ -35,8 +35,8 @@ Animal movement connects premises (farms, markets, dealers, raisers, slaughter p
 To start, let's import a typical hypothetical dataset of cattle movements in the US and have a look at the variables.
 
 ```{r}
-#| warning: false
 #| echo: true
+#| warning: false
 #| code-fold: false
 #| output: false
 
@@ -48,7 +48,7 @@ glimpse(movements)
 ```
 
 | Variable | Description | Example |
-|------------------|-----------------------------------|-------------------|
+|------------------------|------------------------|------------------------|
 | `date` | Date of shipment (YYYY-MM-DD) | 2025-03-15 |
 | `origin_id` | Unique code for the origin premises | P01 |
 | `origin_type` | Type of origin premises (e.g., Dairy, Dealer, Market) | Dairy |
@@ -60,18 +60,422 @@ glimpse(movements)
 | `breed` | Breed category (Holstein, Angus, etc.) | Holstein |
 | `purpose` | Reason for movement (Sale, Raising, Finishing, Slaughter) | Raising |
 
-### Identify the nodes
+### Identify the nodes - "Nodelist"
 
 Nodes are the entities in our network. In this case, each unique premises (farm, dealer, market, etc.), but it could also be a region. We can list all the unique origins and destinations to define the set of nodes.
 
-``` r
-{r}
+``` {r}
+#| warning: false
+#| echo: true
+#| code-fold: false
+#| output: false
+
+# Build node list from both origins and destinations
+length(unique(c(movements$origin_name, movements$destination_name))) # how many unique premises?
+
+# if we are interested, we can also add the farm type and state as attributes.
+nodes <- movements %>%
+  select(origin_name, origin_type, origin_state,
+         destination_name, destination_type, destination_state) %>%
+  pivot_longer(
+    everything(),
+    names_to = c("role", ".value"),
+    names_pattern = "(origin|destination)_(.*)") %>%
+  transmute(prem_id = name, type, state) %>%
+  distinct()
+
+# Now quick summaries:
+nodes %>% count(type, sort = TRUE)
+nodes %>% count(state, sort = TRUE)
+
+nodes %>% 
+  count(state, type) %>%
+  ggplot(aes(x = reorder(state, n), y = n, fill = type)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    title = "Premises by State and Type",
+    x = "State",
+    y = "Number of Premises",
+    fill = "Type") +
+  scale_y_continuous(breaks = 0:10) +  # <- only integer ticks
+  theme_classic()
+
+
+```
+::: callout-tip
+#### Check-in questions:
+- How many different premises could you identify? 
+- Is there a better represented state? 
+- What types of premises did you find?
+:::
+
+
+### Create an "Edgelist" of movements
+
+In this step, we collapse the raw movement records into what we call an edgelist. 
+
+> Each row represents a directed connection from an origin premises to a destination premises. Along with the connection itself, we summarize two key attributes: 
+**shipments** = the total number of movements between that pair of premises; **animals** = the total number of head(s) moved across all those shipments
+
+This edgelist is the backbone of the network: it defines the edges (links) between premises and stores attributes that can later be used to **weight** connections later on (e.g., thicker arrows for more shipments moved, larger nodes for more animals moved).
+
+```{r}
+#| warning: false
+#| echo: true
+#| code-fold: false
+#| output: false
+
+edges <- movements %>%
+  group_by(origin_name, destination_name) %>%
+  summarise(
+    shipments = n(),
+    animals   = sum(head),
+    .groups   = "drop"
+  )
+
+head(edges)
+```
+
+
+### Visualize the network - *Igraph* Package
+
+Seems like we have all set. What now? The *igraph* R package makes our life simple.
+
+> **Igraph** is a library and R package for network analysis, providing a pain-free implementation of graph algorithms and fast handling of large graphs that have millions of nodes and edges. By using this package, we create a special object of class **"IGRAPH"**. 
+
+For example:
+
+```{r}
+#| warning: false
+#| echo: true
+#| code-fold: false
+
+library(igraph)
+g <- graph_from_edgelist(
+  matrix(c("A","B","B","C","C","A"), ncol=2, byrow=TRUE),
+  directed = TRUE) 
+g
+class(g)
+is.simple(g)
+
+# Let's visualize the network!
+plot(g)
+# How many nodes/vertices does it have?
+V(g)
+# How many edges?
+E(g)
+
+```
+
+----------------------
+
+*Igraph* assumes, by default, that our network is directed. If we want to explicitly set it as undirected:
+
+```{r}
+#| warning: false
+#| echo: true
+#| code-fold: false
+g_undirected <- graph_from_edgelist(
+  matrix(c("A","B","B","C","C","A"), ncol=2, byrow=TRUE),
+  directed = FALSE) 
+plot(g_undirected)
+
+```
+
+-----------------------
+
+#### Let's now visualize our animal movement network!
+
+
+```{r}
 #| warning: false
 #| echo: true
 #| code-fold: false
 #| output: true
 
-nodes <- unique(c(movements$origin_id, movements$destination_id))
-length(nodes)   # how many unique premises?
-head(nodes, 10) # preview some IDs
+library(igraph)
+g <- graph_from_data_frame(
+  d = edges, 
+  vertices = nodes,   # your node list with attributes
+  directed = TRUE)
+
+plot(g,
+  layout = layout_with_fr(g),
+  vertex.size = 8,
+  vertex.label = NA,
+  edge.arrow.size = 0.3,
+  edge.color = "grey40")
 ```
+
+### The 5-Number Summary Stats
+
+Now that we’ve visualized our animal movement network, the next step is to quantify its structure with a five simple statistics:
+
+#### **1. Size**
+
+Total number of nodes (premises) and edges (movements) in the network.
+
+- How many premises and movements do we observe?
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: false
+
+# How many nodes/vertices does it have?
+V(g)
+vcount(g) 
+
+# How many edges?
+E(g)
+ecount(g)    
+
+```
+
+#### **2. Density**
+
+Proportion of actual edges to the maximum possible edges.
+
+- How “connected” is our system compared to a fully connected network?
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: false
+
+edge_density(g, loops = FALSE)
+```
+
+#### **3. Number of components**
+
+The number of subgroups of nodes where everyone is connected directly or indirectly.
+
+- Are there isolated clusters of premises not linked to the rest?
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: false
+
+components(g, mode = "weak")$no  # number of weakly connected components
+components(g, mode = "strong")$no  # number of strongly connected components
+
+```
+
+::: callout-tip
+#### Check-in question:
+- Why is the number of weakly connected components different than the strongly connected components?
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| output: false
+
+plot(g,
+  layout = layout_with_fr(g),
+  vertex.size = 8,
+  vertex.label = NA,
+  vertex.color = components(g, mode = "strong")$membership,  # each component gets its own color
+  edge.arrow.size = 0.3,
+  edge.color = "grey40"
+)
+```
+:::
+
+
+#### **4. Average Path Length and/or Diameter**
+
+**Diameter** is the single longest shortest path between any two nodes (i.e., informs about the extent of a possible disease outbreak), while the **Average Path Length** is the mean of all shortest paths (i.e., informs the mean distance an outbreak would reach).
+
+- On average, how many steps separate one premises from another? What about the maximum distance?
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: false
+
+mean_distance(g, directed = FALSE)
+diameter(g, directed = FALSE)
+
+```
+
+#### **5. Clustering Coefficient (or Transitivity)**
+
+Probability that two connected nodes’ neighbors are also connected. I will be zero if there are no triangles, or 1 if all neighbors of nodes connect to each other.
+
+- Do we see “triangles” (tight local clusters) in our network?
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: false
+
+transitivity(g, type = "global")
+
+```
+
+------------------------
+
+### Node Centrality
+
+We can also calculate measures that capture some more general notion of 'importance' of a node - typically referred to as **node/vertex centrality measures**. Some of them include degree (in-degree, out-degree or total degree), weighted degree or strength (in-strength, out-strength or total strength), closeness and betweenness centrality.
+
+#### **1) Degree**
+
+What is the degree in this network, as represented in the graph?
+
+```{r}
+#| echo: false
+#| code-fold: false
+#| output: true
+plot(g,
+  layout = layout_with_fr(g),
+  vertex.size = 8,
+  vertex.label = NA,
+  edge.arrow.size = 0.3,
+  edge.color = "grey40")
+
+V(g)$size <- degree(g)
+
+#| echo: true
+#| code-fold: true
+#| output: true
+degree(g)
+```
+
+
+
+#### **1.1. What if we want to add weights to our degree explicitly?**
+
+Instead of simply counting the number of edges (degree), we can account for the **magnitude of movements** by summing up the edge weights:
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: false
+
+# Total animals moved (in + out)
+V(g)$strength_animals_total <- strength(g, mode = "all", weights = E(g)$animals)
+
+# Total shipments moved (in + out)
+E(g)$weight <- E(g)$shipments
+```
+
+Once we defined our weights, we can visualize it!
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: true
+
+# Plot scaled by total animals moved
+plot(g,
+  layout = layout_with_fr(g),
+  vertex.size = scales::rescale(V(g)$strength_animals_total, to = c(2,30)),
+  vertex.label = NA,
+  edge.width  = scales::rescale(E(g)$weight, to = c(0.01, 4)),
+  edge.arrow.size = 0.3,
+  edge.color = "grey40",
+  main = "Node size scaled by total animals moved (imports + exports)")
+
+```
+
+It already tells us way more information about the role of premises in the network, right? It might be helpful to **distinguish different node types** by color (what type of premises have more connections?):
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: true
+
+# Define your palette
+pal <- c(Dairy = "skyblue2",
+    CalfRaiser = "seagreen",
+    Dealer     = "purple3",
+    Market     = "yellow",
+    Feedlot    = "saddlebrown",
+    Slaughter  = "tomato3",
+    Beef       = "orange")
+
+# Assign colors
+types <- as.character(V(g)$type)
+cols  <- pal[types]
+V(g)$color <- cols
+
+set.seed(42)
+{
+  plot(g,
+    layout = layout_with_fr(g),
+    vertex.size  = scales::rescale(V(g)$strength_animals_total, to = c(4,35)),
+    vertex.color = V(g)$color,
+    vertex.label = NA,
+    edge.width   = scales::rescale(E(g)$weight, to = c(0.01, 4)),
+    edge.arrow.size = 0.2,
+    edge.color  = "grey40",
+    main = "Node color defines premise type"
+  )
+  legend("topright",
+         legend = intersect(names(pal), unique(as.character(V(g)$type))),
+         col    = pal[intersect(names(pal), unique(as.character(V(g)$type)))],
+         pch = 19, bty = "n", cex = 0.9, title = "Premises type")
+}
+
+```
+
+
+#### **1.2. We can also explore **In-Degree** and **Out-Degree** seperately!**
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: true
+
+# Total animals moved (in + out)
+V(g)$strength_animals_in <- strength(g, mode = "in", weights = E(g)$animals)
+V(g)$strength_animals_out <- strength(g, mode = "out", weights = E(g)$animals)
+
+
+in_out_plot <- par(mfrow = c(1,2), mar = c(1,1,3,1))
+
+{
+  plot(g,
+    layout = layout_with_fr(g),
+    vertex.size  = scales::rescale(V(g)$strength_animals_in, to = c(4,35)),
+    vertex.color = V(g)$color,
+    vertex.label = NA,
+    edge.width   = scales::rescale(E(g)$weight, to = c(0.01, 4)),
+    edge.arrow.size = 0.2,
+    edge.color  = "grey40",
+    main = "Node size based on In-degree")
+  legend("topright",
+         legend = intersect(names(pal), unique(as.character(V(g)$type))),
+         col    = pal[intersect(names(pal), unique(as.character(V(g)$type)))],
+         pch = 19, bty = "n", cex = 0.9, title = "Premises type")
+
+  plot(g,
+    layout = layout_with_fr(g),
+    vertex.size  = scales::rescale(V(g)$strength_animals_out, to = c(4,35)),
+    vertex.color = V(g)$color,
+    vertex.label = NA,
+    edge.width   = scales::rescale(E(g)$weight, to = c(0.01, 4)),
+    edge.arrow.size = 0.2,
+    edge.color  = "grey40",
+    main = "Node size based on Out-degree")
+  legend("topright",
+         legend = intersect(names(pal), unique(as.character(V(g)$type))),
+         col    = pal[intersect(names(pal), unique(as.character(V(g)$type)))],
+         pch = 19, bty = "n", cex = 0.9, title = "Premises type")
+}
+
+
+```
+
+
+
+
+
+
+
+
+
+
+

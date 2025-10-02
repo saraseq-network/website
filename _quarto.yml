@@ -44,6 +44,7 @@ format:
     css: 
       - styles/styles.css
       - styles/research.css
+      - styles/outreach-cards.css
 
     toc: true
     number-sections: false

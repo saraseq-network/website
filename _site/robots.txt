@@ -1,1 +1,1 @@
-Sitemap: https://saraseq-network.quarto.pub/website/sitemap.xml
+Sitemap: https://saraseq-network.com/sitemap.xml
