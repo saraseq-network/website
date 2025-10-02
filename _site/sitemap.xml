@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://saraseq-network.quarto.pub/website/outreach/news/2025-09-20-network-seminar.html</loc>
-    <lastmod>2025-09-16T02:25:23.243Z</lastmod>
-  </url>
-  <url>
-    <loc>https://saraseq-network.quarto.pub/website/about.html</loc>
-    <lastmod>2025-09-15T21:03:23.933Z</lastmod>
-  </url>
-  <url>
-    <loc>https://saraseq-network.quarto.pub/website/research.html</loc>
-    <lastmod>2025-09-15T21:43:21.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://saraseq-network.quarto.pub/website/index.html</loc>
-    <lastmod>2025-09-15T20:36:08.325Z</lastmod>
-  </url>
-  <url>
-    <loc>https://saraseq-network.quarto.pub/website/outreach.html</loc>
-    <lastmod>2025-09-16T02:40:23.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://saraseq-network.com/outreach.html</loc>
-    <lastmod>2025-09-16T02:55:43.133Z</lastmod>
-  </url>
-  <url>
     <loc>https://saraseq-network.com/outreach/news/2025-09-20-network-seminar.html</loc>
     <lastmod>2025-10-01T20:47:12.388Z</lastmod>
   </url>
@@ -38,6 +14,10 @@
   </url>
   <url>
     <loc>https://saraseq-network.com/index.html</loc>
+    <lastmod>2025-09-16T02:55:43.133Z</lastmod>
+  </url>
+  <url>
+    <loc>https://saraseq-network.com/outreach.html</loc>
     <lastmod>2025-09-16T02:55:43.133Z</lastmod>
   </url>
 </urlset>
