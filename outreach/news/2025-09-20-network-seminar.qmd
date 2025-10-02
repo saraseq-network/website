@@ -64,7 +64,7 @@ glimpse(movements)
 
 Nodes are the entities in our network. In this case, each unique premises (farm, dealer, market, etc.), but it could also be a region. We can list all the unique origins and destinations to define the set of nodes.
 
-``` {r}
+```{r}
 #| warning: false
 #| echo: true
 #| code-fold: false
@@ -103,20 +103,20 @@ nodes %>%
 
 
 ```
+
 ::: callout-tip
 #### Check-in questions:
-- How many different premises could you identify? 
-- Is there a better represented state? 
-- What types of premises did you find?
-:::
 
+-   How many different premises could you identify?
+-   Is there a better represented state?
+-   What types of premises did you find?
+:::
 
 ### Create an "Edgelist" of movements
 
-In this step, we collapse the raw movement records into what we call an edgelist. 
+In this step, we collapse the raw movement records into what we call an edgelist.
 
-> Each row represents a directed connection from an origin premises to a destination premises. Along with the connection itself, we summarize two key attributes: 
-**shipments** = the total number of movements between that pair of premises; **animals** = the total number of head(s) moved across all those shipments
+> Each row represents a directed connection from an origin premises to a destination premises. Along with the connection itself, we summarize two key attributes: **shipments** = the total number of movements between that pair of premises; **animals** = the total number of head(s) moved across all those shipments
 
 This edgelist is the backbone of the network: it defines the edges (links) between premises and stores attributes that can later be used to **weight** connections later on (e.g., thicker arrows for more shipments moved, larger nodes for more animals moved).
 
@@ -137,12 +137,11 @@ edges <- movements %>%
 head(edges)
 ```
 
-
 ### Visualize the network - *Igraph* Package
 
 Seems like we have all set. What now? The *igraph* R package makes our life simple.
 
-> **Igraph** is a library and R package for network analysis, providing a pain-free implementation of graph algorithms and fast handling of large graphs that have millions of nodes and edges. By using this package, we create a special object of class **"IGRAPH"**. 
+> **Igraph** is a library and R package for network analysis, providing a pain-free implementation of graph algorithms and fast handling of large graphs that have millions of nodes and edges. By using this package, we create a special object of class **"IGRAPH"**.
 
 For example:
 
@@ -168,7 +167,7 @@ E(g)
 
 ```
 
-----------------------
+------------------------------------------------------------------------
 
 *Igraph* assumes, by default, that our network is directed. If we want to explicitly set it as undirected:
 
@@ -183,10 +182,9 @@ plot(g_undirected)
 
 ```
 
------------------------
+------------------------------------------------------------------------
 
 #### Let's now visualize our animal movement network!
-
 
 ```{r}
 #| warning: false
@@ -216,7 +214,7 @@ Now that we’ve visualized our animal movement network, the next step is to qua
 
 Total number of nodes (premises) and edges (movements) in the network.
 
-- How many premises and movements do we observe?
+-   How many premises and movements do we observe?
 
 ```{r}
 #| echo: true
@@ -237,7 +235,7 @@ ecount(g)
 
 Proportion of actual edges to the maximum possible edges.
 
-- How “connected” is our system compared to a fully connected network?
+-   How “connected” is our system compared to a fully connected network?
 
 ```{r}
 #| echo: true
@@ -251,7 +249,7 @@ edge_density(g, loops = FALSE)
 
 The number of subgroups of nodes where everyone is connected directly or indirectly.
 
-- Are there isolated clusters of premises not linked to the rest?
+-   Are there isolated clusters of premises not linked to the rest?
 
 ```{r}
 #| echo: true
@@ -265,7 +263,8 @@ components(g, mode = "strong")$no  # number of strongly connected components
 
 ::: callout-tip
 #### Check-in question:
-- Why is the number of weakly connected components different than the strongly connected components?
+
+-   Why is the number of weakly connected components different than the strongly connected components?
 
 ```{r}
 #| echo: true
@@ -283,12 +282,11 @@ plot(g,
 ```
 :::
 
-
 #### **4. Average Path Length and/or Diameter**
 
 **Diameter** is the single longest shortest path between any two nodes (i.e., informs about the extent of a possible disease outbreak), while the **Average Path Length** is the mean of all shortest paths (i.e., informs the mean distance an outbreak would reach).
 
-- On average, how many steps separate one premises from another? What about the maximum distance?
+-   On average, how many steps separate one premises from another? What about the maximum distance?
 
 ```{r}
 #| echo: true
@@ -304,7 +302,7 @@ diameter(g, directed = FALSE)
 
 Probability that two connected nodes’ neighbors are also connected. I will be zero if there are no triangles, or 1 if all neighbors of nodes connect to each other.
 
-- Do we see “triangles” (tight local clusters) in our network?
+-   Do we see “triangles” (tight local clusters) in our network?
 
 ```{r}
 #| echo: true
@@ -315,7 +313,7 @@ transitivity(g, type = "global")
 
 ```
 
-------------------------
+------------------------------------------------------------------------
 
 ### Node Centrality
 
@@ -344,11 +342,10 @@ V(g)$size <- degree(g)
 degree(g)
 ```
 
-
-
-#### **1.1. What if we want to add weights to our degree explicitly?**
+##### **1.1. What if we want to add weights to our degree explicitly?**
 
 Instead of simply counting the number of edges (degree), we can account for the **magnitude of movements** by summing up the edge weights:
+
 ```{r}
 #| echo: true
 #| code-fold: false
@@ -421,8 +418,7 @@ set.seed(42)
 
 ```
 
-
-#### **1.2. We can also explore **In-Degree** and **Out-Degree** seperately!**
+##### **1.2. We can also explore** In-Degree\*\* and **Out-Degree** separately!\*\*
 
 ```{r}
 #| echo: true
@@ -432,11 +428,9 @@ set.seed(42)
 # Total animals moved (in + out)
 V(g)$strength_animals_in <- strength(g, mode = "in", weights = E(g)$animals)
 V(g)$strength_animals_out <- strength(g, mode = "out", weights = E(g)$animals)
+  
+in_out_plot <- par(mfrow = c(1,2), mar = c(1,1,1,2)) # frame side by side plots
 
-
-in_out_plot <- par(mfrow = c(1,2), mar = c(1,1,3,1))
-
-{
   plot(g,
     layout = layout_with_fr(g),
     vertex.size  = scales::rescale(V(g)$strength_animals_in, to = c(4,35)),
@@ -464,18 +458,114 @@ in_out_plot <- par(mfrow = c(1,2), mar = c(1,1,3,1))
          legend = intersect(names(pal), unique(as.character(V(g)$type))),
          col    = pal[intersect(names(pal), unique(as.character(V(g)$type)))],
          pch = 19, bty = "n", cex = 0.9, title = "Premises type")
-}
+```
 
+::: callout-tip
+#### Check-in questions:
+
+-   Looking at the 2 networks, who are the biggest **receivers** (highest in-degree nodes) simultaneously the major **senders** (out-degree nodes) of animals?
+
+    ```{r}
+    #| echo: true
+    #| code-fold: true
+    #| output: false
+       # check the top in- and out-degree nodes
+      V(g)$name[order(V(g)$strength_animals_in,  decreasing = TRUE)[1:3]]
+      V(g)$name[order(V(g)$strength_animals_out,  decreasing = TRUE)[1:3]]
+    ```
+
+-   If they are not the same, what could this mean for disease transmission?
+:::
+
+#### **2) Closeness centrality**
+
+Closeness centrality is the inverse of the sum of all the distances between node i and all the other nodes in the network.
+
+![](/image/outreach/closeness.jpeg){fig-align="center" width="238"}
+
+Nodes are more prominent to the extend they are close to all other nodes in the network (most often ignoring direction of links for animal networks);
+
+> \*What does that mean practically?\* Premises with high closeness centrality could spread disease quickly across the system, even if they don't handle the largest number of animals. Think of these nodes as **shortcuts** in the network - surveillance at these nodes might help us detect diseases earlier, since they are more central in terms of reach.
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: true
+
+# Compute closeness (ignore direction; unweighted)
+V(g)$closeness <- closeness(g, mode = "all", weights = NA, normalized = TRUE)
+
+# Simple plot: size by closeness, color by type
+plot(g,
+  layout       = layout_with_fr(g),
+  vertex.size  = scales::rescale(V(g)$closeness, to = c(6, 34)),
+  vertex.color = V(g)$color,
+  vertex.label = NA,
+  edge.width   = scales::rescale(E(g)$weight %||% 1, to = c(0.2, 4)),
+  edge.arrow.size = 0.20,
+  edge.color   = "grey65",
+  main         = "Closeness centrality (undirected)")
+
+legend("topright", legend = names(pal), col = pal, pch = 19, bty = "n", cex = 0.8)
+```
+
+::: callout-tip
+#### Check-in questions:
+
+-   Who are the highest closeness centrality nodes?
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| output: false
+# top 3 nodes tip
+V(g)$name[order(V(g)$closeness, decreasing = TRUE)[1:3]]
+```
+:::
+
+#### **2) Betweenness centrality**
+
+Betweenness centrality, as the name indicates, measures the extent to which a node lies on paths between other nodes.
+
+![](/image/outreach/betweenness.jpeg){fig-align="center" width="240" height="65"}
+
+Nodes have high betweeness if they are in a position to observe or control the “flow of information” in the network.
+
+> \*What does that mean practically?\* Premises with **high betweenness centrality** act like **bridges or brokers**. They don’t necessarily move the most animals, but they sit **on the shortest paths between other premises**, meaning they can **control or facilitate the flow** of animals (and pathogens) between otherwise weakly connected parts of the system. Targeting high-betweenness nodes (e.g., through biosecurity campaigns or movement restrictions) can interrupt transmission routes more effectively than focusing on large volume sites.
+
+```{r}
+#| echo: true
+#| code-fold: false
+#| output: true
+
+# Compute betweenness (often undirected for animal networks)
+V(g)$betweenness <- betweenness(g, directed = FALSE, weights = NA, normalized = TRUE)
+
+# Visualize
+plot(g,
+  layout       = layout_with_fr(g),
+  vertex.size  = scales::rescale(V(g)$betweenness, to = c(6, 34)),
+  vertex.color = V(g)$color,
+  vertex.label = NA,
+  edge.width   = scales::rescale(E(g)$weight %||% 1, to = c(0.2, 4)),
+  edge.arrow.size = 0.20,
+  edge.color   = "grey65",
+  main         = "Betweenness centrality (undirected)")
+
+legend("topright", legend = names(pal), col = pal, pch = 19, bty = "n", cex = 0.8)
 
 ```
 
+::: callout-tip
+#### Check-in questions:
 
+-   Who are the highest betweenness centrality nodes?
 
-
-
-
-
-
-
-
-
+```{r}
+#| echo: true
+#| code-fold: true
+#| output: false
+# top 3 nodes
+V(g)$name[order(V(g)$betweenness, decreasing = TRUE)[1:3]]
+```
+:::
