@@ -48,7 +48,7 @@ glimpse(movements)
 ```
 
 | Variable | Description | Example |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | `date` | Date of shipment (YYYY-MM-DD) | 2025-03-15 |
 | `origin_id` | Unique code for the origin premises | P01 |
 | `origin_type` | Type of origin premises (e.g., Dairy, Dealer, Market) | Dairy |

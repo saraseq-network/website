@@ -1,0 +1,30 @@
+---
+title: "Foot-and-Mouth Disease: step-by-step modeling"
+author: Sara C. Sequeira & Evan Porter (OSU Modeling Club)
+date: 2025-10-22
+categories: ["Teaching"]
+image: /image/outreach/fmd.jpg
+description: "Hands-on intro to simulation modelling in R: the FMD case study"
+format:
+  html:
+    toc: true
+    number-sections: true
+    self-contained: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+# Background
+
+Foot-and-mouth disease (FMD) is a severe, fast-spreading viral disease that primarily affects cloven-hoofed animals, including cows, pigs, sheep, goats, and deer, leading to considerable economic losses worldwide. 
+As such, defining targeted FMD surveillance and control strategies becomes essential to prevent  ... An affordable way to understand FMD spread and explore intervention alternatives is to use mathematical and simulation modelling.
+
+> This Quarto document is a hands-on, incremental build of an FMD model: from a minimal SIR to SEIR, then adding controls (culling, vaccination), stochasticity, and a simple multi-farm extension. Each section includes exercises and checklists you can run during the session.
+
+
+
+## 9. References
+
+-   Keeling & Rohani. *Modeling Infectious Diseases in Humans and Animals*. Princeton University Press.
