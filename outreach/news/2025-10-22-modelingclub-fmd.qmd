@@ -143,7 +143,7 @@ We specify how many animals start in each compartment (e.g., mostly susceptible,
 ## Step 1 — Initial conditions (single herd)
 
 We’ll start with a **closed herd** of size (N) (no births/deaths/introductions).\
-We track three compartments: (S) (susceptible), (I) (infectious), (R) (recovered/immune).
+We track three compartments: (S) (susceptible), (I) (infectious), (R) (recovered/removed).
 
 ```{r}
 #| label: step1-initial-conditions 
