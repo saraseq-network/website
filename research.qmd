@@ -151,7 +151,7 @@ Explore **state-level exceptions to currently implemented traceability documenta
 
 ### Peer-reviewed publications {.pubs-title}
 
--   Sequeira *et al.* (2025) "A risk-based framework for Live Bird Shops (LBSs) in Gujarat, India: Identifying pathogen entry and exposure risk profiles". *Preventive Veterinary Medicine*. DOI: [10.1016/j.prevetmed.2025.106661](https://doi.org/10.1016/j.prevetmed.2025.106661 "Persistent link using digital object identifier")
+-   K. Philips *et al.* (2025) "Characterizing state-level patterns of interstate certificates of veterinary inspection exceptions across the United States". *Preventive Veterinary Medicine*. DOI: [10.1016/j.prevetmed.2025.106593](https://doi.org/10.1016/j.prevetmed.2025.106593.)
 
 :::: {.columns .project-row}
 ::: {.column width="100%"}
