@@ -1,6 +1,6 @@
 ---
 title: "Foot-and-Mouth Disease: step-by-step modeling"
-author: Sara C. Sequeira & Evan Porter (OSU Modeling Club)
+author: Sara C. Sequeira (OSU Modeling Club)
 date: 2025-10-22
 categories: ["Teaching"]
 image: /image/outreach/fmd.jpg
@@ -18,13 +18,160 @@ execute:
 
 # Background
 
-Foot-and-mouth disease (FMD) is a severe, fast-spreading viral disease that primarily affects cloven-hoofed animals, including cows, pigs, sheep, goats, and deer, leading to considerable economic losses worldwide. 
-As such, defining targeted FMD surveillance and control strategies becomes essential to prevent  ... An affordable way to understand FMD spread and explore intervention alternatives is to use mathematical and simulation modelling.
+Foot-and-mouth disease (FMD) is a severe, fast-spreading viral disease that primarily affects cloven-hoofed animals, including cows, pigs, sheep, goats, and deer, leading to considerable economic losses worldwide. As such, defining targeted FMD surveillance and control strategies becomes essential to prevent ... An affordable way to understand FMD spread and explore intervention alternatives is to use **mathematical and simulation modelling**.
 
 > This Quarto document is a hands-on, incremental build of an FMD model: from a minimal SIR to SEIR, then adding controls (culling, vaccination), stochasticity, and a simple multi-farm extension. Each section includes exercises and checklists you can run during the session.
 
+# What is a model?
 
+A **model** is a simplified representation of a real system. In infectious disease epidemiology, models help us describe how infections spread in populations and how interventions may change that spread.\
+Instead of capturing every detail, we focus on the key processes that drive disease dynamics: infection, recovery, immunity and contact patterns.
 
-## 9. References
+Mathematical models strengths:
+
+-   Give us biological understanding of multiple pathogens into equations (past epidemics, for instance);
+
+-   Allow us to explore “what if” scenarios (e.g., *what if we vaccinate 10% of animals?*, *what if we stop animal movement?*);
+
+-   Quantify how parameters such as transmission rate or recovery rate affect outbreaks;
+
+-   Affordable way to support evidence-based decisions for surveillance and control.
+
+Mathematical models **weaknesses**:
+
+-   General predictions are possible (e.g., “peak of infection” for instance), but especially hard for medium-term outbreaks (when there is some immunity established);
+
+-   Hard to determine the "correct model" or how complex the model should be;
+
+-   "Models are only as good as the data on which they rely" — arguable.
+
+For **foot-and-mouth disease (FMD)**, models are especially useful because the disease spreads rapidly and control measures (like movement restrictions or vaccination) must be applied quickly and effectively.
+
+------------------------------------------------------------------------
+
+# Defining a model: what do we need before coding?
+
+Before we start simulating, we must define four key ingredients:
+
+## Population structure
+
+Who are we modeling? For FMD, we can start with a single, closed herd of (N) animals — meaning no births, deaths, or external introductions.
+
+## Compartments (epidemiological states)
+
+We divide the population into groups (compartments) representing disease stages.
+
+-   **S (Susceptible)**: animals that can become infected.\
+-   **I (Infectious)**: animals currently shedding virus and capable of infecting others.\
+-   **R (Recovered)**: animals that have cleared infection and are temporarily immune.\
+
+This structure is called an **SIR model**.\
+
+![](images/SIR_noflows.png){width="615"}
+
+## Processes (flows between compartments)
+
+-   **Transmission:** Susceptible → Infectious, at rate proportional to contact and infection probability (probability of transmission given contact x prevalence of infected)\
+
+-   **Recovery:** Infectious → Recovered, at rate equal to the inverse of the infectious period
+
+![](images/SIR_diagram.png){width="615"}
+
+*Figure: Basic SIR model structure for foot-and-mouth disease (FMD). The force of infection (λ) drives transitions from Susceptible (S) to Infected (I), while recovery rate (γ) moves animals to the Recovered (R) class.*
+
+## Parameters
+
+Each process has an associated parameter that quantifies its rate (in its simplest form):
+
+-   **β: transmission rate (per animal per day)**, determines how quickly susceptible animals become infected; The effective infection pressure at any time is the *force of infection*, λ, which depends on both β and the current proportion (or number) of infectious animals.
+
+-   **γ: recovery rate (per day)**, determines how quickly infectious animals recover (or are removed); Its value is the inverse of the average infectious period, e.g. γ = 1/6 per day for a six-day infectious period.
+
+Together, β and γ define the **speed and magnitude** of the epidemic.
+
+Their ratio, R0 = β / γ, gives the expected number of secondary infections produced by one infectious animal in a fully susceptible herd (also known as **Basic Reproduction Number**).
+
+::: {.callout-note collapse="true"}
+### Understanding β (beta) vs. λ (lambda)
+
+In the SIR model, **β** and **λ** are closely related but describe different concepts:
+
++--------+----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
+| Symbol | Name                 | Meaning                                                                                                                                                                                                                       | Units              |
++:=======+:=====================+:==============================================================================================================================================================================================================================+:===================+
+| **β**  | *Transmission rate*  | The *per-contact probability* of infection multiplied by the *average number of contacts per animal per day*. It is a constant that represents how efficiently infection spreads when susceptible and infectious animals mix. | per animal per day |
++--------+----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
+| **λ**  | *Force of infection* | The *per-susceptible risk* of becoming infected at a given time. It depends on how many infectious animals are currently present:                                                                                             | per day            |
+|        |                      |                                                                                                                                                                                                                               |                    |
+|        |                      | -   **λ** (t) = **β \*** I(t)/N (frequency-dependent)                                                                                                                                                                         |                    |
+|        |                      |                                                                                                                                                                                                                               |                    |
+|        |                      | (Assuming that each animal has a **fixed number of contacts per day**, independent of population size; common for vector borne diseases)                                                                                      |                    |
+|        |                      |                                                                                                                                                                                                                               |                    |
+|        |                      | -   **λ** (t) = **β \*** I(t) (density dependent)                                                                                                                                                                             |                    |
+|        |                      |                                                                                                                                                                                                                               |                    |
+|        |                      | (Assuming that **contact rates increase with density**; common for environmental transmission or spatially mixed systems)                                                                                                     |                    |
++--------+----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+
+
+So:
+
+-   **β** is a *model parameter* describing transmission potential.
+
+-   **λ(t)** is a *dynamic quantity* that changes over time as the number of infectious animals (I) changes.
+
+In plain terms:
+
+-   β tells us **how infectious** the disease is,
+
+-   λ tells us **how much infection pressure** there is at this moment.
+
+------------------------------------------------------------------------
+
+> ✅ **Tip for intuition:**\
+> Think of β as a property of the *pathogen and contact network*, and λ as a property of the *current epidemic state*.
+:::
+
+## Initial conditions
+
+We specify how many animals start in each compartment (e.g., mostly susceptible, a few infected).
+
+------------------------------------------------------------------------
+
+> In the next section, we’ll translate these assumptions into code by building a simple deterministic SIR model for FMD, step by step.
+
+# Building our code framework
+
+## Step 1 — Initial conditions (single herd)
+
+We’ll start with a **closed herd** of size (N) (no births/deaths/introductions).\
+We track three compartments: (S) (susceptible), (I) (infectious), (R) (recovered/immune).
+
+```{r}
+#| label: step1-initial-conditions 
+
+# Time horizon
+tmax <- 365
+
+# Compartments: S, IH, IL, C, R, E
+compartments <- c("S","I","R")
+
+# Herd size and initial compartments/states
+N <- 1000 
+
+init <- list( S = N - 5,  # start with 5 infectious animals 
+              I = 5, 
+              R = 0)
+
+resSIR <- matrix(NA, nrow = tmax, ncol = length(compartments))
+colnames(resSIR) <- compartments
+
+# t = 0 row
+resSIR[1, ] <- unlist(init)
+```
+
+> Why “matrix”? It’s a fast, simple container we can fill row-by-row inside the loop.
+
+## Step 2 — Parameters (β, γ, and how we pick them)
+
+# References
 
 -   Keeling & Rohani. *Modeling Infectious Diseases in Humans and Animals*. Princeton University Press.
