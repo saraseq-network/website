@@ -185,6 +185,9 @@ beta
 ```
 
 
+## Step 3 — Let's build our simulation loop!
+
+
 ```{r}
 #| label: step3-simulationloop
 
