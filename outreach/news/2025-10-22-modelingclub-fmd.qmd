@@ -142,35 +142,81 @@ We specify how many animals start in each compartment (e.g., mostly susceptible,
 
 ## Step 1 — Initial conditions (single herd)
 
-We’ll start with a **closed herd** of size (N) (no births/deaths/introductions).\
-We track three compartments: (S) (susceptible), (I) (infectious), (R) (recovered/removed).
+We’ll start with a closed herd of size N and three compartments: S (susceptible), I (infectious), and R (recovered).\
+We’ll code this in base R, starting with imperative programming, using a preallocated matrix (fast and simple to fill row‑by‑row);
 
 ```{r}
 #| label: step1-initial-conditions 
+library(tidyverse)
 
-# Time horizon
-tmax <- 365
+# Setting initial conditions
+S <- 990
+I <- 10
+R <- 0
+N <- S+I+R
 
-# Compartments: S, IH, IL, C, R, E
-compartments <- c("S","I","R")
+d_time <- 1
+max_time <- 365
 
-# Herd size and initial compartments/states
-N <- 1000 
 
-init <- list( S = N - 5,  # start with 5 infectious animals 
-              I = 5, 
-              R = 0)
-
-resSIR <- matrix(NA, nrow = tmax, ncol = length(compartments))
-colnames(resSIR) <- compartments
-
-# t = 0 row
-resSIR[1, ] <- unlist(init)
+# Define final output with initial conditions (dataframe with 4 columns: Time, S, I, R)
+output <- tibble(Time=seq(0,max_time,by=d_time), S=NA, I=NA, R=NA)
 ```
 
-> Why “matrix”? It’s a fast, simple container we can fill row-by-row inside the loop.
+> Why “tibble” vs "matrix"? Both would work, I chose tibble as it allows for better plots (ggplot) and summaries further - while a matrix could be good if you only need raw speed and numeric precision.
 
 ## Step 2 — Parameters (β, γ, and how we pick them)
+
+```{r}
+#| label: step2-parameters-density
+
+# Defining our gamma
+infectious_period_days <- 7
+gamma <- 1 / infectious_period_days   # per day
+
+
+# Defining our beta
+R0_target <- 2.5                      # range from 1.68 to 4.5
+beta <- (R0_target * gamma) / N       # density-dependent calibration
+beta
+  
+
+
+```
+
+
+```{r}
+#| label: step3-simulationloop
+
+for(row in seq_len(nrow(output))){ 
+  output$S[row] <- S
+  output$I[row] <- I 
+  output$R[row] <- R
+  
+    # density-dependent FOI: lambda = beta * I   
+  lambda <- beta * I
+  
+  leave_S <- S * (1 - exp(-lambda * d_time))   # S -> I
+  leave_I <- I * (1 - exp(-gamma * d_time))    # I -> R
+
+  S <- S - leave_S 
+  I <- I + leave_S - leave_I 
+  R <- R + leave_I
+  
+stopifnot(abs((S+I+R)-N) < sqrt(.Machine$double.eps)) }
+
+resSIR <- data.frame(Day = output$Time, Susceptible = output$S, Infected = output$I, Recovered = output$R) 
+
+view(resSIR)
+
+library(reshape2)
+output2 <- melt(output, id.vars = "Time", variable.name = "Compartment", value.name = "Count")
+
+# Plot using ggplot2
+ggplot(output2, aes(x = Time, y = Count, color = Compartment)) + geom_line(linewidth = 1) + labs(x = "Time (in Days)", y = "Count", title = "SIR Model Results") + theme_minimal()
+
+```
+
 
 # References
 

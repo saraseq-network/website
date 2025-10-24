@@ -151,7 +151,7 @@ Explore **state-level exceptions to currently implemented traceability documenta
 
 ### Peer-reviewed publications {.pubs-title}
 
--   K. Philips *et al.* (2025) "Characterizing state-level patterns of interstate certificates of veterinary inspection exceptions across the United States". *Preventive Veterinary Medicine*. DOI: [10.1016/j.prevetmed.2025.106593](https://doi.org/10.1016/j.prevetmed.2025.106593.)
+-   K. Philips *et al.* (2025) "Characterizing state-level patterns of interstate certificates of veterinary inspection exceptions across the United States". *Preventive Veterinary Medicine*. DOI: [10.1016/j.prevetmed.2025.106593](https://www.sciencedirect.com/science/article/pii/S0167587725001783?via%3Dihub)
 
 :::: {.columns .project-row}
 ::: {.column width="100%"}
