@@ -1,8 +1,11 @@
 project:
   type: website
-  preview: 
+  preview:
     navigate: false
-
+  resources:
+    - outreach/news/data/**
+    
+    
 website:
   site-url: https://saraseq-network.com
   favicon: image/network.png
@@ -49,3 +52,5 @@ format:
     toc: true
     number-sections: false
     number-depth: 3
+    
+    
