@@ -1,6 +1,6 @@
 ---
 title: "Foot-and-Mouth Disease: step-by-step modeling"
-author: Sara C. Sequeira (OSU Modeling Club)
+author: Sara C. Sequeira (OSU Modeling Club) & Evan B. Porter
 date: 2025-10-22
 categories: ["Teaching"]
 image: /image/outreach/fmd.jpg
@@ -47,7 +47,16 @@ Mathematical models **weaknesses**:
 
 For **foot-and-mouth disease (FMD)**, models are especially useful because the disease spreads rapidly and control measures (like movement restrictions or vaccination) must be applied quickly and effectively.
 
-------------------------------------------------------------------------
+> # Start here: Intro to mathematical modeling  
+>
+> Before we jump into the basics for modeling in R, review the core SIR/SEIR math.  
+> Evan B. Porter kindly provided his slides and welcomes questions: evanjporter99@gmail.com  
+>
+><iframe src="data/pptSIRreview.pptx"
+          width="100%" height="600px" style="border:none; border-radius:12px;">
+</iframe>
+
+------------------------------------
 
 # Defining a model: what do we need before coding?
 
@@ -179,14 +188,11 @@ gamma <- 1 / infectious_period_days   # per day
 R0_target <- 2.5                      # range from 1.68 to 4.5
 beta <- (R0_target * gamma) / N       # density-dependent calibration
 beta
-  
 
 
 ```
 
-
 ## Step 3 — Let's build our simulation loop!
-
 
 ```{r}
 #| label: step3-simulationloop
@@ -219,7 +225,6 @@ output2 <- melt(output, id.vars = "Time", variable.name = "Compartment", value.n
 ggplot(output2, aes(x = Time, y = Count, color = Compartment)) + geom_line(linewidth = 1) + labs(x = "Time (in Days)", y = "Count", title = "SIR Model Results") + theme_minimal()
 
 ```
-
 
 # References
 

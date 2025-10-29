@@ -4943,6 +4943,7 @@ margin-bottom: .75rem;
   <ul class="collapse">
   <li><a href="#step-1-initial-conditions-single-herd" id="toc-step-1-initial-conditions-single-herd" class="nav-link" data-scroll-target="#step-1-initial-conditions-single-herd"><span class="header-section-number">4.1</span> Step 1 — Initial conditions (single herd)</a></li>
   <li><a href="#step-2-parameters-β-γ-and-how-we-pick-them" id="toc-step-2-parameters-β-γ-and-how-we-pick-them" class="nav-link" data-scroll-target="#step-2-parameters-β-γ-and-how-we-pick-them"><span class="header-section-number">4.2</span> Step 2 — Parameters (β, γ, and how we pick them)</a></li>
+  <li><a href="#step-3-lets-build-our-simulation-loop" id="toc-step-3-lets-build-our-simulation-loop" class="nav-link" data-scroll-target="#step-3-lets-build-our-simulation-loop"><span class="header-section-number">4.3</span> Step 3 — Let’s build our simulation loop!</a></li>
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5</span> References</a></li>
   </ul>
@@ -5179,6 +5180,9 @@ We’ll code this in base R, starting with imperative programming, using a preal
 <pre><code>[1] 0.0003571429</code></pre>
 </div>
 </div>
+</section>
+<section id="step-3-lets-build-our-simulation-loop" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="step-3-lets-build-our-simulation-loop"><span class="header-section-number">4.3</span> Step 3 — Let’s build our simulation loop!</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(row <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(output))){ </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>S[row] <span class="ot">&lt;-</span> S</span>
