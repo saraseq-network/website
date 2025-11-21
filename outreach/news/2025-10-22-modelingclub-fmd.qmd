@@ -18,7 +18,7 @@ execute:
 
 # Background
 
-Foot-and-mouth disease (FMD) is a severe, fast-spreading viral disease that primarily affects cloven-hoofed animals, including cows, pigs, sheep, goats, and deer, leading to considerable economic losses worldwide. As such, defining targeted FMD surveillance and control strategies becomes essential to prevent ... An affordable way to understand FMD spread and explore intervention alternatives is to use **mathematical and simulation modelling**.
+Foot-and-mouth disease (FMD) is a severe, fast-spreading viral disease that primarily affects cloven-hoofed animals, including cows, pigs, sheep, goats, and deer, leading to considerable economic losses worldwide. As such, defining targeted FMD surveillance and control strategies becomes essential to prevent larger animal and economic losses. An affordable way to understand FMD spread and explore intervention alternatives is to use **mathematical and simulation modelling**.
 
 > This Quarto document is a hands-on, incremental build of an FMD model: from a minimal SIR to SEIR, then adding controls (culling, vaccination), stochasticity, and a simple multi-farm extension. Each section includes exercises and checklists you can run during the session.
 
@@ -47,16 +47,44 @@ Mathematical models **weaknesses**:
 
 For **foot-and-mouth disease (FMD)**, models are especially useful because the disease spreads rapidly and control measures (like movement restrictions or vaccination) must be applied quickly and effectively.
 
-> # Start here: Intro to mathematical modeling  
+> ## Start here: Intro to mathematical modeling
 >
-> Before we jump into the basics for modeling in R, review the core SIR/SEIR math.  
-> Evan B. Porter kindly provided his slides and welcomes questions: evanjporter99@gmail.com  
+> Before we jump into the basics for modeling in R, review the core SIR/SEIR math. Evan B. Porter kindly provided his slides and welcomes questions: evanjporter99\@gmail.com
 >
-><iframe src="data/pptSIRreview.pptx"
-          width="100%" height="600px" style="border:none; border-radius:12px;">
-</iframe>
-
-------------------------------------
+> ::: slide-wrap
+> <!-- A single-page-tall viewer; users scroll to see more pages -->
+>
+> <iframe src="data/SIR_review.pdf#page=1&amp;zoom=page-width" title="Intro math slides" loading="lazy">
+>
+> </iframe>
+> :::
+>
+> <p class="copyright-note">
+>
+> © 2025 Evan B. Porter. Slides used with permission for educational purposes.
+>
+> </p>
+>
+> ```{=html}
+> <style>
+> /* button */
+> .button-wrap{margin-bottom:.5rem}
+> .btn-download{
+> background:#0056b3;color:#fff!important;padding:.5rem 1rem;border-radius:8px;
+> text-decoration:none;font-weight:500;transition:background .2s
+> }
+> .btn-download:hover{background:#003d80}
+> /* viewer */
+> .slide-wrap iframe{
+> width:100%;
+> height:40vh;       /* one-page tall; adjust to taste (e.g., 90vh) */
+> border:none;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.08)
+> }
+> @media (max-width:768px){ .slide-wrap iframe{ height:75vh } }
+> /* copyright */
+> .copyright-note{font-size:.85rem;color:#666;margin-top:.6rem;text-align:right}
+> </style>
+> ```
 
 # Defining a model: what do we need before coding?
 
@@ -185,8 +213,8 @@ gamma <- 1 / infectious_period_days   # per day
 
 
 # Defining our beta
-R0_target <- 2.5                      # range from 1.68 to 4.5
-beta <- (R0_target * gamma) / N       # density-dependent calibration
+R0_target <- 2.5                  # range from 1.68 to 4.5
+beta <- (R0_target * gamma)       # density-dependent 
 beta
 
 
