@@ -212,9 +212,9 @@ infectious_period_days <- 7
 gamma <- 1 / infectious_period_days   # per day
 
 
-# Defining our beta
+# Defining our beta R0 = Beta * N / gamma
 R0_target <- 2.5                  # range from 1.68 to 4.5
-beta <- (R0_target * gamma)       # density-dependent 
+beta <- (R0_target * gamma) / N   # density-dependent 
 beta
 
 
